@@ -57,7 +57,8 @@
 
     <!-- side drawer sizes size -->
 
-
+    <dimen name="layout_margin_end_xsmall">5dp</dimen>
+    <dimen name="edttext_height_xmedium">42dp</dimen>
     <dimen name="edttext_height_medium">36dp</dimen>
     <dimen name="edttext_height_small">28dp</dimen>
     <dimen name="edttext_bottom_padding">5dp</dimen>

@@ -194,7 +194,7 @@ public interface AppConstt {
         String FN_PreIntroductionFragment = "PreIntroductionFragment";
         String FN_PreIntroLocationFragment = "PreIntroLocationFragment";
         String FN_PreIntroNotificationFragment = "PreIntroNotification";
-        String FN_SignInVAFragment = "SignInVAFragment";
+        String FN_PreSignInFragment = "SignInVAFragment";
         String FN_SignInFarmerFragment = "SignInFarmerFragment";
         String FN_HomeFragment = "HomeFragment";
         String FN_ArtistDetailFragment = "ArtistDetailFragment";
@@ -235,6 +235,7 @@ public interface AppConstt {
         String FN_SummeryDiseaseFragment = "MessageDiseaseReportFragment";
         String FN_CompleteFarmerProfileByVA = "SearchFarmerProfileByVA" ;
         String FN_SignUpMain = "SignUpMain" ;
+        String FN_ElectricityHomeFragment = "ElectricityHomeFragment" ;
     }
 
 
@@ -264,13 +265,14 @@ public interface AppConstt {
 
     interface ToolbarState {
         //State to show certian items in toolbar
-        byte TOOLBAR_BACK_TITLE_HIDDEN = 0;
-        byte TOOLBAR_BACK_TITLE_VISIBLE = 1;
-        byte TOOLBAR_BACK_TITLE_LOGO_VISIBLE = 2;
-        byte TOOLBAR_BOTTOMBAR_VISIBLE_BACK_VISIBLE = 3;
-        byte MORE = 4;
-        byte TOOLBAR_WEHTER_HIDEN_BACK_VISIBLE=5;
+        byte TOOLBAR_TITLE_HIDDEN = 0;
+        byte TOOLBAR_BACK_HIDDEN = 1;
+        byte TOOLBAR_MORE_HIDDEN = 2;
+
+
+
         byte TOOLBAR_HIDDEN=6;
+        byte TOOLBAR_VISIBLE=7;
     }
 
     interface Notifications {

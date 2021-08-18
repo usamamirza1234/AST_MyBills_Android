@@ -24,6 +24,8 @@
     <color name="carribean">#13619c</color>
     <color name="maroon">#3f0000</color>
     <color name="red">#ca2306</color>
+    <color name="black_1">#3C3C3C</color>
+    <color name="white_1">#F1F1F1</color>
     <color name="transparent">#00000000</color>
 
     <color name="orange">#ee8d01</color>
@@ -35,6 +37,7 @@
     <color name="thm_green">#3bb045</color>
     <color name="thm_green_light">#00c853</color>
     <color name="thm_yellow">#ffeb3b</color>
+    <color name="thm_yellow_1">#F8C120</color>
     <color name="thm_error">#ca2306</color>
     <color name="thm_card_light">#fafafa</color>
     <color name="thm_divider">#ebebeb</color>

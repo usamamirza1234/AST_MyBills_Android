@@ -4,10 +4,10 @@
     <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/green_govt</item>
-        <item name="colorPrimaryDark">@color/green_govt</item>
-        <item name="colorAccent">@color/green_govt</item>
-        <item name="android:textColorPrimary">@color/green_govt</item>
+        <item name="colorPrimary">@color/thm_yellow_1</item>
+        <item name="colorPrimaryDark">@color/thm_blue_dark1</item>
+        <item name="colorAccent">@color/thm_blue1</item>
+        <item name="android:textColorPrimary">@color/thm_blue2</item>
 
         <item name="android:windowBackground">@color/white</item>
         <!--<item name="android:windowBackground">@drawable/bg_intro</item>-->

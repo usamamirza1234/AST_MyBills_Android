@@ -62,7 +62,8 @@ dependencies {
 
     implementation 'com.google.android.gms:play-services-auth-api-phone:11.6.0'
 
-
+    //RTL Viewpaget
+    implementation 'com.duolingo.open:rtl-viewpager:2.0.0'
     //  firebase updated sdk start...
     implementation platform('com.google.firebase:firebase-bom:26.0.0')
     implementation 'com.google.firebase:firebase-crashlytics'
