@@ -1729,9 +1729,10 @@ id frg_market_rl_banner
 id frg_market_rl_outlets_container
 id frg_market_viewpagr_indicator
 id frg_market_viewpgr_featured_banner
-id frg_my_bills_edt_confirm_password
-id frg_my_bills_edt_password
+id frg_my_bills_edt_acc_num
+id frg_my_bills_edt_ref
 id frg_my_bills_rcvBills
+id frg_my_bills_rlAdd
 id frg_my_bills_spinnerBiller
 id frg_my_bills_spinnerBilltpe
 id frg_my_bills_txvBilltype
@@ -1778,6 +1779,9 @@ id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
 id lay_item_market_imv_banner
+id lay_my_bill_txv_Ref
+id lay_my_bill_txv_acc
+id lay_my_bill_txv_billtype
 id lay_nav_txv_iqamaID
 id lay_nav_txv_name
 id lay_navigationview_imv_user
@@ -1786,7 +1790,6 @@ id lay_navigationview_llImportantDates
 id lay_navigationview_llLogout
 id lay_navigationview_llMyBills
 id lay_navview_ll_main
-id layview
 id left
 id light
 id line1
