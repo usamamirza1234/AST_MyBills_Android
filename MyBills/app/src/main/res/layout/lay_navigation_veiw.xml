@@ -187,7 +187,7 @@
 
 
             <LinearLayout
-
+                android:id="@+id/lay_navigationview_llMyBills"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginTop="5dp"
@@ -210,7 +210,7 @@
             </LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lay_navigationview_llEditProfile"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginTop="5dp"
@@ -240,7 +240,7 @@
                 android:gravity="center_vertical"
                 android:paddingStart="0dp">
 
-               
+
 
                 <TextView
 
@@ -250,6 +250,30 @@
                     android:includeFontPadding="false"
                     android:paddingEnd="14dp"
                     android:text="History"
+                    android:textColor="@color/black_1"
+                    android:textSize="@dimen/fontsize_mini"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lay_navigationview_llImportantDates"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp">
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:includeFontPadding="false"
+                    android:paddingEnd="14dp"
+                    android:text="Important Dates"
                     android:textColor="@color/black_1"
                     android:textSize="@dimen/fontsize_mini"
                     android:textStyle="bold" />
@@ -278,8 +302,11 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <LinearLayout
 
+
+
+            <LinearLayout
+                android:id="@+id/lay_navigationview_llLogout"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginTop="5dp"

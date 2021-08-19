@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_shp_circle_green.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\shp_circle_green.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
@@ -12,6 +16,10 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-anydpi-v26\\icon.png"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_terms_conditions.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_terms_conditions.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shp_rect_rounded_hollow_dark_gray2_white_mini.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\shp_rect_rounded_hollow_dark_gray2_white_mini.xml"
     },
@@ -20,8 +28,16 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-hdpi\\app_icon.png"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_adapter_spinner_item_list.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\adapter_spinner_item_list.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_profile.png.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_mcv_action_next.png.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\mcv_action_next.png"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_left_arrow.png.flat",
@@ -52,16 +68,20 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\shp_rect_rounded_white_card.xml"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_edit_profile.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_edit_profile.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_sign_in.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_sign_in.xml"
     },
     {
-        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_login_24.xml.flat",
-        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_baseline_login_24.xml"
-    },
-    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_foreground.png.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_login_24.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_baseline_login_24.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -128,12 +148,16 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_rating_star_half_filled.xml"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_wifi_protected_setup_24.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_baseline_wifi_protected_setup_24.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_wifi_protected_setup_24.xml.flat",
-        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_baseline_wifi_protected_setup_24.xml"
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home_gas.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_home_gas.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_water.png.flat",
@@ -196,12 +220,12 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\shp_rect_rounded_blue_.xml"
     },
     {
-        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shp_rect_rounded_yellow_mini_stoke.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\shp_rect_rounded_yellow_mini_stoke.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shp_rect_rounded_yellow_mini.xml.flat",
@@ -240,6 +264,18 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\shp_rect_rounded_white.xml"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_shp_circle_red.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\shp_circle_red.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_mcv_action_previous.png.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\mcv_action_previous.png"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_lay_custom_calendar_day.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\lay_custom_calendar_day.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_locations_orange.png.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-xxhdpi\\locations_orange.png"
     },
@@ -268,12 +304,12 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_rating_star_not_filled.xml"
     },
     {
-        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\anim-ldrtl_no_anim.xml.flat",
-        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\anim-ldrtl\\no_anim.xml"
-    },
-    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_edttxv_custom_cursor_color.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\edttxv_custom_cursor_color.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\anim-ldrtl_no_anim.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\anim-ldrtl\\no_anim.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shp_rect_rounded_white_mini.xml.flat",
@@ -292,12 +328,16 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\spinner_view.xml"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shp_rect_rounded_yellow_medium_stoke.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\shp_rect_rounded_yellow_medium_stoke.xml"
     },
     {
-        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_lay_item_my_bills.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\lay_item_my_bills.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -318,6 +358,10 @@
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_shp_bottom_rounded_white_medium.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\shp_bottom_rounded_white_medium.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_how_paybill.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_how_paybill.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -344,12 +388,16 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_menu.png"
     },
     {
-        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\anim-ldrtl_enter_from_left.xml.flat",
-        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\anim-ldrtl\\enter_from_left.xml"
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_shp_circle_blue.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\shp_circle_blue.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shp_rect_rounded_white_mini_stoke.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\shp_rect_rounded_white_mini_stoke.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\anim-ldrtl_enter_from_left.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\anim-ldrtl\\enter_from_left.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\anim_enter_from_right.xml.flat",
@@ -366,6 +414,10 @@
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_calendar.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_calendar.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_important_dates.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_important_dates.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher_round.png.flat",
@@ -428,12 +480,24 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-xhdpi\\app_icon.png"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_shp_circle_yellow.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\shp_circle_yellow.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shp_table.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\shp_table.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_icon.png.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_calender_view.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_calender_view.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home_water.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_home_water.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pin_entry_view_bg.xml.flat",
@@ -444,12 +508,20 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\anim-ldrtl\\exit_to_right.xml"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_my_bills.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_my_bills.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shp_rect_toast.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\shp_rect_toast.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home_internet.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_home_internet.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_app_icon.png.flat",
@@ -468,6 +540,10 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\anim-ldrtl\\enter_from_right.xml"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_lay_calendar_item.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\lay_calendar_item.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinner_item_bg.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\spinner_item_bg.xml"
     },
@@ -476,11 +552,19 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\shp_rect_rounded_green_medium_stoke.xml"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_calender_custom.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_calender_custom.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_arrow_up_24.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_arrow_up_24.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_lay_act_toolbar.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\lay_act_toolbar.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_dlg_calender.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\dlg_calender.xml"
     }
 ]

@@ -48,7 +48,7 @@ public class SignInFragment extends Fragment implements View.OnClickListener {
 
             case R.id.frg_signin_login:
                 AppConfig.getInstance().mUser.setLoggedIn(true);
-//                AppConfig.getInstance().saveUserProfile();
+                AppConfig.getInstance().saveUserProfile();
                 ((IntroActivity) getActivity()).navtoMainActivity();
                 break;
 

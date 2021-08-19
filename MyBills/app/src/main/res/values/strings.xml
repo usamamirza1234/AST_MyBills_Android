@@ -19,6 +19,22 @@
     <string name="frg_forgot_password_reset">Reset Password</string>
     <string name="frg_forgot_password_login">Login</string>
     <string name="frg_signup_confirm_cpassword">Confirm Password</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="calendar">Calender</string>
+    <string name="frg_edit_profile">Edit Profile</string>
+    <string name="frg_edit_profile_yourname">Edit your name</string>
+    <string name="frg_edit_profile_cnic">Edit your CNIC</string>
+    <string name="frg_edit_profile_province">Edit your province</string>
+    <string name="frg_edit_profile_edit_city">Edit your City</string>
+    <string name="frg_edit_profile_update">Update</string>
+    <string name="frg_edit_profile_phone">Edit your phone number</string>
+    <string name="frg_my_bills_enter_reference">Enter reference number</string>
+    <string name="frg_my_bills_account_number">Enter acount number</string>
+    <string name="frg_my_bills_add_update">Add/Update</string>
+    <string name="frg_my_bills">My Bills</string>
+    <string name="select_bill_type">Bill Type</string>
+    <string name="select_biller_type">Biller Type</string>
 
 
 </resources>

@@ -236,6 +236,14 @@ public interface AppConstt {
         String FN_CompleteFarmerProfileByVA = "SearchFarmerProfileByVA" ;
         String FN_SignUpMain = "SignUpMain" ;
         String FN_ElectricityHomeFragment = "ElectricityHomeFragment" ;
+        String FN_CalenderViewFragment = "CalenderViewFragment";
+        String FN_WaterHomeFragment = "WaterHomeFragment" ;
+        String FN_GasHomeFragment = "GasHomeFragment" ;
+        String FN_InternetHomeFragment = "InternetHomeFragment" ;
+        String FN_TermsConditionsFragment = "TermsConditionsFragment" ;
+        String FN_CustomCalenderFragment = "CustomCalenderFragment" ;
+        String FN_EditProfileFragment = "EditProfileFragment" ;
+        String FN_MyBillsFragment = "MyBillsFragment" ;
     }
 
 

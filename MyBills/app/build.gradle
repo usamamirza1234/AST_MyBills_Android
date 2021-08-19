@@ -98,5 +98,7 @@ dependencies {
 
 //otp
     implementation 'swarajsaaj:otpreader:1.1'
+//Calendrt
+    implementation 'com.squareup:android-times-square:1.6.5@aar'
 
 }
