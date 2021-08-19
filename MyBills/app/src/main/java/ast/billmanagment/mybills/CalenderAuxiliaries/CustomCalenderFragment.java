@@ -2,6 +2,7 @@ package ast.billmanagment.mybills.CalenderAuxiliaries;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,10 +71,16 @@ public class CustomCalenderFragment extends Fragment implements View.OnClickList
         ArrayList<String> lstImportantDates = new ArrayList();
 
 
+        lstImportantDates.add("2021-08-01");
+        lstImportantDates.add("2021-08-02");
+        lstImportantDates.add("2021-08-03");
+        lstImportantDates.add("2021-08-07");
+        lstImportantDates.add("2021-08-09");
+        lstImportantDates.add("2021-08-14");
         lstImportantDates.add("2021-08-30");
         lstImportantDates.add("2021-08-31");
-        lstImportantDates.add("2021-09-1");
-        lstImportantDates.add("2021-09-7");
+        lstImportantDates.add("2021-09-01");
+        lstImportantDates.add("2021-09-07");
         lstImportantDates.add("2021-09-14");
         lstImportantDates.add("2021-09-15");
         lstImportantDates.add("2021-09-16");
@@ -82,7 +89,18 @@ public class CustomCalenderFragment extends Fragment implements View.OnClickList
         lstImportantDates.add("2021-09-25");
         lstImportantDates.add("2021-09-30");
 
-        nextMonthAdapter = new CalendarNextMonthAdapter(getContext(), nextMonth, lstImportantDates);
+
+        ArrayList<String> newlstImportantDates = new ArrayList();
+
+        for (int i=0; i<lstImportantDates.size();i++)
+        {
+            String strPhoneNumber = String.valueOf(lstImportantDates.get(i).toString());
+            strPhoneNumber = "" + strPhoneNumber.substring(5);
+            newlstImportantDates.add(strPhoneNumber);
+            Log.d("BackTrackingWorking", "strPhoneNumber "+ strPhoneNumber);
+        }
+
+        nextMonthAdapter = new CalendarNextMonthAdapter(getContext(), nextMonth, newlstImportantDates);
 
         GridView gridview1 = (GridView) frg.findViewById(R.id.gridview1);
         gridview1.setAdapter(nextMonthAdapter);
@@ -234,7 +252,7 @@ public class CustomCalenderFragment extends Fragment implements View.OnClickList
         }
         if (getActivity() != null && isAdded()) {
             mBadgeUpdateListener.setToolbarState(AppConstt.ToolbarState.TOOLBAR_BACK_HIDDEN);
-            mBadgeUpdateListener.setHeaderTitle("Gas");
+            mBadgeUpdateListener.setHeaderTitle(getString(R.string.frg_important_dates));
 
         }
 

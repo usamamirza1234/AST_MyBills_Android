@@ -1,7 +1,7 @@
 <resources>
 
     <!--region Application-->
-    <string name="app_name">MyBills</string>
+    <string name="app_name">OneBill App</string>
     <string name="goole_maps_key">AIzaSyCczk1b8_C7NOm-ZXkj76y6fjBixUTV5qI</string>
     <string name="frg_signin_login_accoint">Login Your Account</string>
     <string name="frg_signin_username">User Name</string>
@@ -35,6 +35,9 @@
     <string name="frg_my_bills">My Bills</string>
     <string name="select_bill_type">Bill Type</string>
     <string name="select_biller_type">Biller Type</string>
+    <string name="frg_history">History</string>
+    <string name="frg_important_dates">Important Dates</string>
+    <string name="frg_settings">Settings</string>
 
 
 </resources>

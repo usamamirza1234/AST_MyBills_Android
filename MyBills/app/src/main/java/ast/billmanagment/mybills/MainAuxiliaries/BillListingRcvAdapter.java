@@ -49,6 +49,10 @@ public class BillListingRcvAdapter extends RecyclerView.Adapter<BillListingRcvAd
 
 
 
+        holder.txv_bill.setText(mData.get(position).BillType);
+        holder.txv_ref.setText(mData.get(position).Refference_number);
+        holder.txv_acc.setText(mData.get(position).Account_number);
+
         holder.itemView.setOnClickListener(v -> iAdapterCallback.onAdapterEventFired(IAdapterCallback.EVENT_A, position));
     }
 
@@ -65,10 +69,14 @@ public class BillListingRcvAdapter extends RecyclerView.Adapter<BillListingRcvAd
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-
+        TextView txv_bill, txv_ref, txv_acc;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            txv_acc = itemView.findViewById(R.id.lay_my_bill_txv_acc);
+            txv_ref = itemView.findViewById(R.id.lay_my_bill_txv_Ref);
+            txv_bill = itemView.findViewById(R.id.lay_my_bill_txv_billtype);
+
 
         }
     }

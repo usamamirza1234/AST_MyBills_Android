@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -28,17 +29,21 @@ public class MyBillsFragment extends Fragment implements View.OnClickListener {
 
     IBadgeUpdateListener mBadgeUpdateListener;
 
-    ArrayList <DModel_Bills> lstMyBills;
+    ArrayList<DModel_Bills> lstMyBills;
 
     BillListingRcvAdapter billListingRcvAdapter;
     BillTypeSpinnerAdapter billTypeSpinnerAdapter;
     BillerSpinnerAdapter billerSpinnerAdapter;
 
+    RelativeLayout rlAdd;
+
     RecyclerView rcv_myBills;
     Spinner spinnerBillType;
     Spinner spinnerBiller;
     private TextView txvBillType;
-
+    private TextView edt_Reffrence;
+    private TextView edt_Account;
+    String str_billType = "";
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -53,15 +58,13 @@ public class MyBillsFragment extends Fragment implements View.OnClickListener {
         populateSpinnerBiller();
 
 
-
-
         return frg;
     }
 
 
     private void populateSpinnerBillType() {
         ArrayList<String> lstGender = new ArrayList<>();
-   
+
 
         lstGender.add("Electricity");
         lstGender.add(getResources().getString(R.string.select_bill_type));
@@ -74,6 +77,7 @@ public class MyBillsFragment extends Fragment implements View.OnClickListener {
 
                 int Pos = Integer.parseInt(selectedItem);
 //                txvBillType.setText(lstGender.get(position));
+                str_billType = (lstGender.get(position));
 
 
             } // to close the onItemSelected
@@ -87,7 +91,6 @@ public class MyBillsFragment extends Fragment implements View.OnClickListener {
 
 
     }
-
 
 
     private void populateSpinnerBiller() {
@@ -120,11 +123,10 @@ public class MyBillsFragment extends Fragment implements View.OnClickListener {
     }
 
 
-    private void populateMyBills()
-    {
-        int size =( 5 );
-        for (int i = size; i >=0 ; i--) {
-            lstMyBills.add(new DModel_Bills("Bill"," " ,(i+1) + ""));
+    private void populateMyBills() {
+        int size = (2);
+        for (int i = size; i >= 0; i--) {
+            lstMyBills.add(new DModel_Bills("Bill", "100"+i, (i + 1) + ""));
 
         }
 
@@ -151,18 +153,29 @@ public class MyBillsFragment extends Fragment implements View.OnClickListener {
 
     private void bindviews(View view) {
         rcv_myBills = view.findViewById(R.id.frg_my_bills_rcvBills);
+
+
+        edt_Reffrence = view.findViewById(R.id.frg_my_bills_edt_acc_num);
+        edt_Account = view.findViewById(R.id.frg_my_bills_edt_ref);
+
+
+        rlAdd = view.findViewById(R.id.frg_my_bills_rlAdd);
         spinnerBillType = view.findViewById(R.id.frg_my_bills_spinnerBilltpe);
         spinnerBiller = view.findViewById(R.id.frg_my_bills_spinnerBiller);
         txvBillType = view.findViewById(R.id.frg_my_bills_txvBilltype);
+
+        rlAdd.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
 
         switch (v.getId()) {
-//            case R.id.frg_bill_type_txv_view_electricty:
-//                navToElectricityHomeFragment();
-//                break;
+            case R.id.frg_my_bills_rlAdd:
+                lstMyBills.add(new DModel_Bills(str_billType+"", edt_Reffrence.getText().toString() + "", edt_Account.getText().toString() + ""));
+
+                billListingRcvAdapter.notifyDataSetChanged();
+                break;
 
         }
     }
@@ -190,10 +203,6 @@ public class MyBillsFragment extends Fragment implements View.OnClickListener {
             setBottomBar();
         }
     }
-
-
-
-
 
 
 }

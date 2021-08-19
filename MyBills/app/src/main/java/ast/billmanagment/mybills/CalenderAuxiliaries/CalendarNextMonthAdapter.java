@@ -160,15 +160,15 @@ public class CalendarNextMonthAdapter extends BaseAdapter {
                 case "2021-08-22":
                 case "2021-08-30":
                 case "2021-08-31":
-                case "2021-09-1":
-                case "2021-09-2":
-                case "2021-09-3":
-                case "2021-09-4":
-                case "2021-09-5":
-                case "2021-09-6":
-                case "2021-09-7":
-                case "2021-09-8":
-                case "2021-09-9":
+                case "2021-09-01":
+                case "2021-09-02":
+                case "2021-09-03":
+                case "2021-09-04":
+                case "2021-09-05":
+                case "2021-09-06":
+                case "2021-09-07":
+                case "2021-09-08":
+                case "2021-09-09":
                 case "2021-09-10":
                 case "2021-09-11":
                 case "2021-09-12":

@@ -9,7 +9,7 @@
         android:orientation="vertical">
 
         <View
-            android:id="@+id/layview"
+
             android:layout_width="match_parent"
             android:layout_height="@dimen/divider_height"
             android:background="@color/gray" />
@@ -22,6 +22,7 @@
             android:weightSum="90">
 
             <TextView
+                android:id="@+id/lay_my_bill_txv_billtype"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="30"
@@ -35,6 +36,7 @@
                 />
 
             <TextView
+                android:id="@+id/lay_my_bill_txv_Ref"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="30"
@@ -48,7 +50,7 @@
                 android:textSize="@dimen/fontsize_mini"
                 />
 
-            <TextView
+            <TextView       android:id="@+id/lay_my_bill_txv_acc"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="30"

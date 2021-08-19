@@ -88,7 +88,7 @@
                     android:background="@drawable/shp_rect_rounded_yellow_mini_stoke">
 
                     <EditText
-                        android:id="@+id/frg_my_bills_edt_password"
+                        android:id="@+id/frg_my_bills_edt_ref"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
@@ -116,7 +116,7 @@
                     android:background="@drawable/shp_rect_rounded_yellow_mini_stoke">
 
                     <EditText
-                        android:id="@+id/frg_my_bills_edt_confirm_password"
+                        android:id="@+id/frg_my_bills_edt_acc_num"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
@@ -134,7 +134,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/frg_presigin_rlregister"
+                    android:id="@+id/frg_my_bills_rlAdd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"

@@ -233,7 +233,7 @@
             </LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lay_navigationview_llHistory"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginTop="5dp"
@@ -280,7 +280,7 @@
             </LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lay_navigationview_llSettings"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginTop="5dp"
@@ -296,7 +296,7 @@
                     android:gravity="end"
                     android:includeFontPadding="false"
                     android:paddingEnd="14dp"
-                    android:text="Payment Methods"
+                    android:text="Settings"
                     android:textColor="@color/black_1"
                     android:textSize="@dimen/fontsize_mini"
                     android:textStyle="bold" />

@@ -244,6 +244,8 @@ public interface AppConstt {
         String FN_CustomCalenderFragment = "CustomCalenderFragment" ;
         String FN_EditProfileFragment = "EditProfileFragment" ;
         String FN_MyBillsFragment = "MyBillsFragment" ;
+        String FN_HistoryFragment = "HistoryFragment" ;
+        String FN_SettingsFragment = "SettingsFragment" ;
     }
 
 

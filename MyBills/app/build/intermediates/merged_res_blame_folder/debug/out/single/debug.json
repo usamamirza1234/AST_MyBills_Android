@@ -56,6 +56,10 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\anim\\exit_to_left.xml"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_history.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_history.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\anim_exit_to_right.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\anim\\exit_to_right.xml"
     },
@@ -178,6 +182,10 @@
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_calendar_today_24.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\ic_baseline_calendar_today_24.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\anim_enter_from_left.xml.flat",
@@ -408,12 +416,20 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\toast_custom.xml"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_settings.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_calendar.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_calendar.xml"
+    },
+    {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_lay_item_my_billshistory.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\layout\\lay_item_my_billshistory.xml"
     },
     {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_important_dates.xml.flat",

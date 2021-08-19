@@ -1498,6 +1498,7 @@ drawable ic_arrow_down_24
 drawable ic_arrow_up_24
 drawable ic_baner_placeholder
 drawable ic_baseline_arrow_back_24
+drawable ic_baseline_calendar_today_24
 drawable ic_baseline_login_24
 drawable ic_baseline_wifi_protected_setup_24
 drawable ic_bulb
@@ -1725,6 +1726,7 @@ id frg_forgot_password_reset
 id frg_forgot_password_rlCreate
 id frg_forgot_password_rlLogin
 id frg_forgot_password_rlToolbar
+id frg_history_rlCalander
 id frg_market_rl_banner
 id frg_market_rl_outlets_container
 id frg_market_viewpagr_indicator
@@ -1732,6 +1734,7 @@ id frg_market_viewpgr_featured_banner
 id frg_my_bills_edt_acc_num
 id frg_my_bills_edt_ref
 id frg_my_bills_rcvBills
+id frg_my_bills_rcvHistory
 id frg_my_bills_rlAdd
 id frg_my_bills_spinnerBiller
 id frg_my_bills_spinnerBilltpe
@@ -1782,13 +1785,16 @@ id lay_item_market_imv_banner
 id lay_my_bill_txv_Ref
 id lay_my_bill_txv_acc
 id lay_my_bill_txv_billtype
+id lay_my_bill_txv_stattus
 id lay_nav_txv_iqamaID
 id lay_nav_txv_name
 id lay_navigationview_imv_user
 id lay_navigationview_llEditProfile
+id lay_navigationview_llHistory
 id lay_navigationview_llImportantDates
 id lay_navigationview_llLogout
 id lay_navigationview_llMyBills
+id lay_navigationview_llSettings
 id lay_navview_ll_main
 id left
 id light
@@ -2015,6 +2021,7 @@ layout fragment_calender_custom
 layout fragment_calender_view
 layout fragment_edit_profile
 layout fragment_forgot_password
+layout fragment_history
 layout fragment_home_electricity
 layout fragment_home_gas
 layout fragment_home_internet
@@ -2023,6 +2030,7 @@ layout fragment_how_paybill
 layout fragment_important_dates
 layout fragment_my_bills
 layout fragment_pre_sign_in
+layout fragment_settings
 layout fragment_sign_in
 layout fragment_sign_up
 layout fragment_splash
@@ -2032,6 +2040,7 @@ layout lay_calendar_item
 layout lay_custom_calendar_day
 layout lay_item_market_feature_banner
 layout lay_item_my_bills
+layout lay_item_my_billshistory
 layout lay_navigation_veiw
 layout month
 layout mtrl_layout_snackbar
@@ -2143,10 +2152,13 @@ string frg_forgot_password_login
 string frg_forgot_password_login_accoint
 string frg_forgot_password_reset
 string frg_forgot_password_username
+string frg_history
+string frg_important_dates
 string frg_my_bills
 string frg_my_bills_account_number
 string frg_my_bills_add_update
 string frg_my_bills_enter_reference
+string frg_settings
 string frg_signin_create_account
 string frg_signin_login
 string frg_signin_login_accoint

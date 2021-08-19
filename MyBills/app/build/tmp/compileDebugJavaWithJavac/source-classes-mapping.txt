@@ -3,8 +3,9 @@ ast/billmanagment/mybills/HomeAuxiliaries/ElectricityHomeFragment.java
  ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment$1
  ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment$timerTask
  ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment$timerTask$1
-ast/billmanagment/mybills/CalenderAuxiliaries/CalendarAdapter.java
- ast.billmanagment.mybills.CalenderAuxiliaries.CalendarAdapter
+ast/billmanagment/mybills/MainAuxiliaries/BillHistoryRcvAdapter.java
+ ast.billmanagment.mybills.MainAuxiliaries.BillHistoryRcvAdapter
+ ast.billmanagment.mybills.MainAuxiliaries.BillHistoryRcvAdapter$ViewHolder
 ast/billmanagment/mybills/Utils/IWebIndexedCallback.java
  ast.billmanagment.mybills.Utils.IWebIndexedCallback
 ast/billmanagment/mybills/MainAuxiliaries/DModel_Bills.java
@@ -62,8 +63,8 @@ ast/billmanagment/mybills/Utils/MyLocation.java
  ast.billmanagment.mybills.Utils.MyLocation
 ast/billmanagment/mybills/Utils/RectangleImageView.java
  ast.billmanagment.mybills.Utils.RectangleImageView
-ast/billmanagment/mybills/CalenderAuxiliaries/CalendarNextMonthAdapter.java
- ast.billmanagment.mybills.CalenderAuxiliaries.CalendarNextMonthAdapter
+ast/billmanagment/mybills/CalenderAuxiliaries/CalendarAdapter.java
+ ast.billmanagment.mybills.CalenderAuxiliaries.CalendarAdapter
 ast/billmanagment/mybills/Utils/CircleStrokeImageView.java
  ast.billmanagment.mybills.Utils.CircleStrokeImageView
 ast/billmanagment/mybills/Utils/DModel_PaginationInfo.java
@@ -105,9 +106,8 @@ ast/billmanagment/mybills/Utils/CustomAlertDialog.java
  ast.billmanagment.mybills.Utils.CustomAlertDialog
 ast/billmanagment/mybills/FCMUtils/MyInstanceIDListenerService.java
  ast.billmanagment.mybills.FCMUtils.MyInstanceIDListenerService
-ast/billmanagment/mybills/MainActivity.java
- ast.billmanagment.mybills.MainActivity
- ast.billmanagment.mybills.MainActivity$1
+ast/billmanagment/mybills/Utils/HumanReadableTime.java
+ ast.billmanagment.mybills.Utils.HumanReadableTime
 ast/billmanagment/mybills/MainAuxiliaries/TermsConditionsFragment.java
  ast.billmanagment.mybills.MainAuxiliaries.TermsConditionsFragment
 ast/billmanagment/mybills/IntroAuxiliaries/SignInFragment.java
@@ -128,6 +128,8 @@ ast/billmanagment/mybills/Utils/IWebPaginationCallback.java
  ast.billmanagment.mybills.Utils.IWebPaginationCallback
 ast/billmanagment/mybills/HomeAuxiliaries/DModelBanner.java
  ast.billmanagment.mybills.HomeAuxiliaries.DModelBanner
+ast/billmanagment/mybills/MainAuxiliaries/HistoryFragment.java
+ ast.billmanagment.mybills.MainAuxiliaries.HistoryFragment
 ast/billmanagment/mybills/MyApplication.java
  ast.billmanagment.mybills.MyApplication
 ast/billmanagment/mybills/MainAuxiliaries/HowToPayBillFragment.java
@@ -190,6 +192,10 @@ ast/billmanagment/mybills/HomeAuxiliaries/GasHomeFragment.java
  ast.billmanagment.mybills.HomeAuxiliaries.GasHomeFragment$1
  ast.billmanagment.mybills.HomeAuxiliaries.GasHomeFragment$timerTask
  ast.billmanagment.mybills.HomeAuxiliaries.GasHomeFragment$timerTask$1
+ast/billmanagment/mybills/MainAuxiliaries/DModel_BillsHistory.java
+ ast.billmanagment.mybills.MainAuxiliaries.DModel_BillsHistory
+ast/billmanagment/mybills/MainAuxiliaries/SettingsFragment.java
+ ast.billmanagment.mybills.MainAuxiliaries.SettingsFragment
 ast/billmanagment/mybills/Utils/PinEntry.java
  ast.billmanagment.mybills.Utils.PinEntry
  ast.billmanagment.mybills.Utils.PinEntry$1
@@ -198,10 +204,8 @@ ast/billmanagment/mybills/Utils/PinEntry.java
  ast.billmanagment.mybills.Utils.PinEntry$OnPinEnteredListener
  ast.billmanagment.mybills.Utils.PinEntry$SavedState
  ast.billmanagment.mybills.Utils.PinEntry$SavedState$1
-ast/billmanagment/mybills/CalenderAuxiliaries/CustomCalenderFragment.java
- ast.billmanagment.mybills.CalenderAuxiliaries.CustomCalenderFragment
- ast.billmanagment.mybills.CalenderAuxiliaries.CustomCalenderFragment$1
- ast.billmanagment.mybills.CalenderAuxiliaries.CustomCalenderFragment$2
+ast/billmanagment/mybills/Utils/GPSTracker.java
+ ast.billmanagment.mybills.Utils.GPSTracker
 ast/billmanagment/mybills/Utils/HintSpinner.java
  ast.billmanagment.mybills.Utils.HintSpinner
  ast.billmanagment.mybills.Utils.HintSpinner$1
@@ -219,7 +223,12 @@ ast/billmanagment/mybills/IntroActivity.java
 ast/billmanagment/mybills/AppConfig.java
  ast.billmanagment.mybills.AppConfig
  ast.billmanagment.mybills.AppConfig$1
-ast/billmanagment/mybills/Utils/HumanReadableTime.java
- ast.billmanagment.mybills.Utils.HumanReadableTime
-ast/billmanagment/mybills/Utils/GPSTracker.java
- ast.billmanagment.mybills.Utils.GPSTracker
+ast/billmanagment/mybills/MainActivity.java
+ ast.billmanagment.mybills.MainActivity
+ ast.billmanagment.mybills.MainActivity$1
+ast/billmanagment/mybills/CalenderAuxiliaries/CustomCalenderFragment.java
+ ast.billmanagment.mybills.CalenderAuxiliaries.CustomCalenderFragment
+ ast.billmanagment.mybills.CalenderAuxiliaries.CustomCalenderFragment$1
+ ast.billmanagment.mybills.CalenderAuxiliaries.CustomCalenderFragment$2
+ast/billmanagment/mybills/CalenderAuxiliaries/CalendarNextMonthAdapter.java
+ ast.billmanagment.mybills.CalenderAuxiliaries.CalendarNextMonthAdapter

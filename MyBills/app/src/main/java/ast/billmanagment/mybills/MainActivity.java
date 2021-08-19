@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -18,8 +19,10 @@ import com.google.android.material.navigation.NavigationView;
 
 import ast.billmanagment.mybills.CalenderAuxiliaries.CustomCalenderFragment;
 import ast.billmanagment.mybills.MainAuxiliaries.EditProfileFragment;
+import ast.billmanagment.mybills.MainAuxiliaries.HistoryFragment;
 import ast.billmanagment.mybills.MainAuxiliaries.HomeBillsFragment;
 import ast.billmanagment.mybills.MainAuxiliaries.MyBillsFragment;
+import ast.billmanagment.mybills.MainAuxiliaries.SettingsFragment;
 import ast.billmanagment.mybills.Utils.AppConstt;
 import ast.billmanagment.mybills.Utils.IBadgeUpdateListener;
 
@@ -29,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
     private FragmentTransaction ft;
     private FragmentManager fm;
     RelativeLayout rlToolbar, rlBack, rlMenu;
-    LinearLayout llImportantDates, llMyBills, llProfile, llLogout;
+    LinearLayout llImportantDates, llMyBills, llProfile, llLogout, llHistory, llSettings;
     TextView txvTitleBar;
 
 
@@ -61,13 +64,19 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
         llImportantDates = findViewById(R.id.lay_navigationview_llImportantDates);
         llProfile = findViewById(R.id.lay_navigationview_llEditProfile);
         llMyBills = findViewById(R.id.lay_navigationview_llMyBills);
-
+        llLogout = findViewById(R.id.lay_navigationview_llLogout);
+        llHistory = findViewById(R.id.lay_navigationview_llHistory);
+        llSettings = findViewById(R.id.lay_navigationview_llSettings);
 
         rlBack.setOnClickListener(this);
         rlMenu.setOnClickListener(this);
+
         llImportantDates.setOnClickListener(this);
         llProfile.setOnClickListener(this);
         llMyBills.setOnClickListener(this);
+        llLogout.setOnClickListener(this);
+        llHistory.setOnClickListener(this);
+        llSettings.setOnClickListener(this);
 
 
         drawer.addDrawerListener(new DrawerLayout.DrawerListener() {
@@ -115,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
                 onBackPressed();
                 break;
             case R.id.lay_navigationview_llImportantDates:
-//                navToCustomCalenderFragment();
+                navToCustomCalenderFragment();
                 break;
             case R.id.lay_navigationview_llEditProfile:
                 navToEditProfileFragment();
@@ -126,6 +135,12 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
 
             case R.id.lay_navigationview_llLogout:
                 AppConfig.getInstance().navtoLogin();
+                break;
+            case R.id.lay_navigationview_llHistory:
+                navToHistoryFragment();
+                break;
+            case R.id.lay_navigationview_llSettings:
+                navToSettingsFragment();
                 break;
         }
     }
@@ -201,13 +216,34 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
     public void onBackPressed() {
 
 
+        String tag = returnStackFragmentTag();
+
         AppConfig.getInstance().closeKeyboard(this);
 
         if (this.drawer.isDrawerOpen(GravityCompat.END)) {
             this.drawer.closeDrawer(GravityCompat.END);
         } else {
-            super.onBackPressed();
+            Log.d("whileOnBackPress", " Tag " + tag);
+            if ((tag.equalsIgnoreCase(AppConstt.FragTag.FN_MyBillsFragment)) ||
+                    (tag.equalsIgnoreCase(AppConstt.FragTag.FN_EditProfileFragment))
+                    || (tag.equalsIgnoreCase(AppConstt.FragTag.FN_HistoryFragment))
+                    || (tag.equalsIgnoreCase(AppConstt.FragTag.FN_CustomCalenderFragment))
+
+
+            ) {
+                setFirstFragment();
+            } else {
+                if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
+                    getSupportFragmentManager().popBackStack();
+                    Log.d("whileOnBackPress", " 123 " + tag);
+                } else {
+                    Log.d("whileOnBackPress", " 456 " + tag);
+                    super.onBackPressed();
+                }
+            }
         }
+
+
     }
 
 
@@ -216,6 +252,16 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
         navToBillTypeFragment();
     }
 
+    public String returnStackFragmentTag() {
+        int index = fm.getBackStackEntryCount() - 1;
+        FragmentManager.BackStackEntry backEntry = null;
+        String tag = "";
+        if (index >= 0) {
+            backEntry = fm.getBackStackEntryAt(index);
+            tag = backEntry.getName();
+        }
+        return tag;
+    }
 
     private void navToBillTypeFragment() {
         clearMyBackStack();
@@ -226,11 +272,30 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
     }
 
 
+    private void navToSettingsFragment() {
+        Fragment frg = new SettingsFragment();
+        ft = fm.beginTransaction();
+        ft.add(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_SettingsFragment);
+        ft.addToBackStack(AppConstt.FragTag.FN_SettingsFragment);
+        hideLastStackFragment(ft);
+        ft.commit();
+    }
+
+
     private void navToMyBillsFragment() {
         Fragment frg = new MyBillsFragment();
         ft = fm.beginTransaction();
         ft.add(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_MyBillsFragment);
         ft.addToBackStack(AppConstt.FragTag.FN_MyBillsFragment);
+        hideLastStackFragment(ft);
+        ft.commit();
+    }
+
+    private void navToHistoryFragment() {
+        Fragment frg = new HistoryFragment();
+        ft = fm.beginTransaction();
+        ft.add(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_HistoryFragment);
+        ft.addToBackStack(AppConstt.FragTag.FN_HistoryFragment);
         hideLastStackFragment(ft);
         ft.commit();
     }
@@ -245,6 +310,15 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
         ft.commit();
     }
 
+    private void navToCustomCalenderFragment() {
+
+        Fragment frg = new CustomCalenderFragment();
+        ft = fm.beginTransaction();
+        ft.add(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_CustomCalenderFragment);
+        ft.addToBackStack(AppConstt.FragTag.FN_CustomCalenderFragment);
+        hideLastStackFragment(ft);
+        ft.commit();
+    }
 
     public void hideLastStackFragment(FragmentTransaction ft) {
         Fragment frg = null;
@@ -260,6 +334,10 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
             } else if (frg instanceof CustomCalenderFragment && frg.isVisible()) {
                 ft.hide(frg);
             } else if (frg instanceof MyBillsFragment && frg.isVisible()) {
+                ft.hide(frg);
+            } else if (frg instanceof HistoryFragment && frg.isVisible()) {
+                ft.hide(frg);
+            } else if (frg instanceof SettingsFragment && frg.isVisible()) {
                 ft.hide(frg);
             }
         }
