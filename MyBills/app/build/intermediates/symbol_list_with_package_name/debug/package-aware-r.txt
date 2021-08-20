@@ -1650,7 +1650,9 @@ id bottom
 id bottom_sides
 id bounce
 id buttonPanel
+id calendar
 id calendarView
+id calendarViewPager
 id calendar_grid
 id calendar_view
 id cancel_action

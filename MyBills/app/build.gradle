@@ -96,9 +96,12 @@ dependencies {
     implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
     implementation  'com.zhouyou:signseekbar:1.0.6'
 
+    implementation 'sun.bob:mcalendarview:1.0.0'
 //otp
     implementation 'swarajsaaj:otpreader:1.1'
 //Calendrt
     implementation 'com.squareup:android-times-square:1.6.5@aar'
+
+
 
 }
