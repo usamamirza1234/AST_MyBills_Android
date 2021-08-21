@@ -4,7 +4,7 @@
     android:shape="oval">
 
     <solid
-        android:color="@color/thm_green_faded"/>
+        android:color="@color/transparent"/>
 
     <size
         android:width="80dp"

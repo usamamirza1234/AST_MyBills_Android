@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,251 +14,110 @@
         android:layout_height="match_parent"
         android:background="@color/white_1"
 
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:padding="26dp">
 
         <LinearLayout
-            android:padding="2dp"
-            android:background="@drawable/shp_rect_rounded_yellow_mini_stoke"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="@drawable/shp_rect_rounded_white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp">
 
-            <RelativeLayout
 
-                android:id="@+id/header"
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/toolbar_height"
-                android:background="@color/thm_yellow_1">
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/shp_rect_rounded_yellow_mini_stoke">
+
+                <ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.MaterialCalendarView
+                    android:id="@+id/dlg_reorder_mcv_calndr"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    app:mcv_selectionColor="@color/thm_yellow_1"
+                    app:mcv_showOtherDates="decorated_disabled" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shp_rect_rounded_yellow_mini_stoke"
+                android:orientation="vertical">
+
+                <ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.MaterialCalendarView
+                    android:id="@+id/dlg_reorder_mcv_calndr_nextmonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+
+                    app:mcv_selectionColor="@color/thm_yellow_1"
+                    app:mcv_showOtherDates="decorated_disabled" />
+
 
                 <LinearLayout
-                    android:layout_width="fill_parent"
+
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:padding="5dp"
-                    android:weightSum="7">
+                    android:layout_margin="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
 
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Sun"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:gravity="center">
 
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Mon"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/shp_circle_yellow" />
 
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Tue"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Wed"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/frag_calender_todays_slot"
+                            android:textSize="@dimen/fontsize_tiny" />
 
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Thu"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Fri"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:gravity="center">
 
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Sat"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/shp_circle_red" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/frag_calender_important_dates"
+                            android:textSize="@dimen/fontsize_tiny" />
+
+                    </LinearLayout>
+
+
                 </LinearLayout>
-
-
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="5dip"
-                    android:textColor="@color/black_1"
-                    android:textSize="18dip"
-                    android:textStyle="bold" />
-
-
-            </RelativeLayout>
-
-            <GridView
-                android:id="@+id/gridview"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:scrollbars="none"
-                android:layout_gravity="center"
-                android:listSelector="@android:color/transparent"
-                android:numColumns="7"
-                android:stretchMode="columnWidth"
-                tools:listitem="@layout/lay_calendar_item" />
-
+            </LinearLayout>
 
         </LinearLayout>
-        <LinearLayout
-            android:padding="2dp"
-            android:background="@drawable/shp_rect_rounded_yellow_mini_stoke"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <RelativeLayout
-
-                android:id="@+id/header1"
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/toolbar_height"
-                android:background="@color/thm_yellow_1">
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:padding="5dp"
-                    android:weightSum="7">
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Sun"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Mon"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Tue"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Wed"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Thu"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Fri"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="Sat"
-                        android:textColor="@color/black_1"
-                        android:textSize="@dimen/fontsize_small"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-
-                <TextView
-                    android:id="@+id/title1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="5dip"
-                    android:textColor="@color/black_1"
-                    android:textSize="18dip"
-                    android:textStyle="bold" />
-
-
-            </RelativeLayout>
-
-            <GridView
-                android:id="@+id/gridview1"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:scrollbars="none"
-                android:layout_gravity="center"
-                android:listSelector="@android:color/transparent"
-                android:numColumns="7"
-                android:stretchMode="columnWidth"
-                tools:listitem="@layout/lay_calendar_item" />
-
-
-        </LinearLayout>
 
     </LinearLayout>
-
-
 
 
 </androidx.core.widget.NestedScrollView>

@@ -1574,6 +1574,7 @@ drawable shp_rect_toast
 drawable shp_rect_top_rounded
 drawable shp_table
 drawable slc_chb_animal
+drawable slc_chb_enabled_dates
 drawable spinner_item_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1650,7 +1651,6 @@ id bottom
 id bottom_sides
 id bounce
 id buttonPanel
-id calendar
 id calendarView
 id calendarViewPager
 id calendar_grid
@@ -1694,8 +1694,8 @@ id dlg_cstm_alrt_btn_ok
 id dlg_cstm_alrt_separator
 id dlg_cstm_alrt_text_msg
 id dlg_cstm_alrt_title
-id dlg_reorder_btn_done
 id dlg_reorder_mcv_calndr
+id dlg_reorder_mcv_calndr_nextmonth
 id edit_query
 id end
 id end_padder
@@ -1762,12 +1762,8 @@ id frg_signup_rlToolbar
 id friday
 id ghost_view
 id gone
-id gridview
-id gridview1
 id group_divider
 id groups
-id header
-id header1
 id home
 id homeAsUp
 id horizontal
@@ -1910,7 +1906,6 @@ id textinput_helper_text
 id thursday
 id time
 id title
-id title1
 id titleDividerNoCustom
 id title_template
 id toast_container
@@ -2143,6 +2138,8 @@ string day_name_format
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string fcm_fallback_notification_channel_label
+string frag_calender_important_dates
+string frag_calender_todays_slot
 string frg_edit_profile
 string frg_edit_profile_cnic
 string frg_edit_profile_edit_city

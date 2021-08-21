@@ -356,6 +356,10 @@
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\ic_bulb.png"
     },
     {
+        "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable_slc_chb_enabled_dates.xml.flat",
+        "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable\\slc_chb_enabled_dates.xml"
+    },
+    {
         "merged": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_round_edit_text.xml.flat",
         "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\drawable-xhdpi\\round_edit_text.xml"
     },
