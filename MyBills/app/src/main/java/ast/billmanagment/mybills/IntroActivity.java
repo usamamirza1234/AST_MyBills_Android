@@ -12,12 +12,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import java.util.Locale;
 
+import ast.billmanagment.mybills.IntroAuxiliaries.PreSignInFragment;
 import ast.billmanagment.mybills.IntroAuxiliaries.SplashFragment;
 import ast.billmanagment.mybills.Utils.AppConstt;
 import ast.billmanagment.mybills.Utils.IBadgeUpdateListener;
@@ -82,7 +84,19 @@ public class IntroActivity extends AppCompatActivity implements IBadgeUpdateList
         setIntent(intent);
         //now getIntent() should always return the last received intent
     }
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
 
+//            case R.id.act_intro_rl_toolbar_logo:
+//
+//                navToChoiceAppNatureFragment();
+//
+//                break;
+
+
+        }
+    }
     @Override
     protected void onResume() {
         super.onResume();
@@ -121,29 +135,29 @@ public class IntroActivity extends AppCompatActivity implements IBadgeUpdateList
         return (int) (result * this.getResources().getDisplayMetrics().density + 0.5f);
     }
 
+    @Override
+    public void onBackPressed() {
 
-    public void clearMyBackStack() {
-        int count = fm.getBackStackEntryCount();
-        for (int i = 0; i < count; ++i) {
-            fm.popBackStackImmediate();
+        String tag = returnStackFragmentTag();
 
+        AppConfig.getInstance().closeKeyboard(this);
+        {
+            Log.d("whileOnBackPress", " Tag " + tag);
+            if ((tag.equalsIgnoreCase(AppConstt.FragTag.FN_SignInFragment)) ||
+                    (tag.equalsIgnoreCase(AppConstt.FragTag.FN_SignUpFragment))
+                    || (tag.equalsIgnoreCase(AppConstt.FragTag.FN_ForgotPasswordFragment))
+            ) {
+                navToPreSignInVAFragment();
+            } else {
+                if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
+                    getSupportFragmentManager().popBackStack();
+                    Log.d("whileOnBackPress", " 123 " + tag);
+                } else {
+                    Log.d("whileOnBackPress", " 456 " + tag);
+                    super.onBackPressed();
+                }
+            }
         }
-//        setBackButtonVisibility(View.GONE);
-//        txvTitle.setText(getResources().getString(R.string.frg_hom_ttl));
-    }
-
-    private void navToSplash() {
-        Fragment frg = new SplashFragment();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.act_intro_content_frg, frg, AppConstt.FragTag.FN_SplashFragment);
-        ft.commit();
-    }
-
-    private void navtoSignInFragment() {
-        SplashFragment frg = new SplashFragment();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.act_intro_content_frg, frg, AppConstt.FragTag.FN_SplashFragment);
-        ft.commit();
     }
 
     //region IBadgeUpdateListener
@@ -183,24 +197,20 @@ public class IntroActivity extends AppCompatActivity implements IBadgeUpdateList
 
     //endregion
 
-    @Override
-    public void onBackPressed() {
 
-        if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
+    //region Navigations
+    public void navToPreSignInVAFragment() {
+        clearMyBackStack();
+        PreSignInFragment frg = new PreSignInFragment();
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.act_intro_content_frg, frg, AppConstt.FragTag.FN_PreSignInFragment);
 
-            getSupportFragmentManager().popBackStack();
-//            if (getSupportFragmentManager().getBackStackEntryCount() == 1)
-//            {
-//                AppConfig.getInstance().mStateApp = AppConstt.STATE_APP_HOME;
-//                txvTitle.setText(getResources().getString(R.string.frg_hom_ttl));
-//                this.btnBack.setVisibility(View.GONE);
-////            }
-        } else {
+        ft.commit();
 
-            super.onBackPressed();
-        }
-        Log.d("onback", "after pop " + fm.getBackStackEntryCount());
     }
+
+
 
     public void navtoMainActivity() {
 //        Toast.makeText(this, "MainActivity", Toast.LENGTH_SHORT).show();
@@ -215,21 +225,39 @@ public class IntroActivity extends AppCompatActivity implements IBadgeUpdateList
         }
     }
 
-
-
-
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-
-//            case R.id.act_intro_rl_toolbar_logo:
-//
-//                navToChoiceAppNatureFragment();
-//
-//                break;
-
+    public String returnStackFragmentTag() {
+        int index = fm.getBackStackEntryCount() - 1;
+        FragmentManager.BackStackEntry backEntry = null;
+        String tag = "";
+        if (index >= 0) {
+            backEntry = fm.getBackStackEntryAt(index);
+            tag = backEntry.getName();
+        }
+        return tag;
+    }
+    public void clearMyBackStack() {
+        int count = fm.getBackStackEntryCount();
+        for (int i = 0; i < count; ++i) {
+            fm.popBackStackImmediate();
 
         }
+//        setBackButtonVisibility(View.GONE);
+//        txvTitle.setText(getResources().getString(R.string.frg_hom_ttl));
     }
+
+    private void navToSplash() {
+        Fragment frg = new SplashFragment();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.act_intro_content_frg, frg, AppConstt.FragTag.FN_SplashFragment);
+        ft.commit();
+    }
+
+    private void navtoSignInFragment() {
+        SplashFragment frg = new SplashFragment();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.act_intro_content_frg, frg, AppConstt.FragTag.FN_SplashFragment);
+        ft.commit();
+    }
+    //endregion
+
 }

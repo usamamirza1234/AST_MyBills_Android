@@ -171,72 +171,16 @@ public interface AppConstt {
         String FN_SignInFragment = "SignInFragment";
         String FN_SignUpFragment = "SignUpFragment";
         String FN_ForgotPasswordFragment = "ForgotPasswordFragment";
-        String FN_VerificationFragment_VA = "VerificationFragment_VA";
-        String FN_VerificationFragment_FA = "VerificationFragment_FA";
-        String FN_ChangePasswordFragment = "ChangePasswordFragment";
-        String FN_ArtistPackageFragment = "ArtistPackageFragment";
-        String FN_ArtistImageVideoFragment = "ArtistImageVideoFragment";
 
-
-        //Main
-        String FN_ProdMenuFragment = "ProdMenuFragment";
-        String FN_OrdersFragment = "OrdersFragment";
-        String FN_OffersFragment = "OffersFragmen";
-        String FN_MoreFragment = "MyFarmFragment";
-        String FN_CartFragment = "CartFragment";
-
-        String FN_ProfileFragment = "SuggestionFragment";
-        String FN_NotificationsFragment = "NotificationsFragment";
-        String FN_WebPageFragment = "WebviewFragment";
-
-
-        String FN_ChoiceAppNatureFragment = "ChoiceAppNatureFragment";
-        String FN_PreIntroductionFragment = "PreIntroductionFragment";
-        String FN_PreIntroLocationFragment = "PreIntroLocationFragment";
-        String FN_PreIntroNotificationFragment = "PreIntroNotification";
         String FN_PreSignInFragment = "SignInVAFragment";
-        String FN_SignInFarmerFragment = "SignInFarmerFragment";
+
         String FN_HomeFragment = "HomeFragment";
-        String FN_ArtistDetailFragment = "ArtistDetailFragment";
 
 
-        String FN_EventFragment = "EventFragment";
-        String FN_PaymentApprovalFragment = "PaymentApprovalFragment";
-        String FN_PaymentFragment = "PaymentFragment";
-        String FN_PaymentCompleteFragment = "PaymentCompleteFragment";
-        String FN_PaymentMethodsFragment = "PaymentMethodsFragment";
 
-        String FN_ReviewFragment = "ReviewFragment";
-        String FN_ContactUsFragment = "ContactUsFragment";
-        String FN_ChatWithUsFragment = "QuestionFragment";
-        String FN_FavtArtistFragment = "SelectArtistPackagesFragment";
-        String FN_CustomPackageFragment = "CustomPackageFragment";
-        String FN_SelectPkgFragment = "SelectPkgFragment";
-        String FN_SubmitCustmPkgReq = "PkgReqSentFragment";
-        String FN_EventLocation = "EventLocation";
-        String FN_EventScheduleFragment = "EventScheduleFragment";
-        String PayFortSuccessFragment = "PayFortSuccessFragment";
 
-        String FN_TermsAndConditionsFragment = "TermsAndConditionsFragment";
-        String FN_YoutubePlayerFragment = "YoutubePlayerFragment" ;
-        String FN_CompleteFarmerProfileFragment = "CompleteFarmerProfileFragment" ;
-        String FN_FarmProfileFragment =  "FarmProfileFragment";
-        String FN_MyProfileFragment =  "MyProfileFragment";
-        String FN_IntimateDiseaseFragment = "IntimateDiseaseFragment" ;
-        String FN_MyFarmFragment = "MyFarmFragment";
-        String FN_SuggestionFragment = "SuggestionFragment" ;
-        String FN_MessageFragment = "MessageFragment" ;
-        String FN_MapFragment = "" ;
-        String FN_DiseaseFragment = "DiseaseFragment" ;
-        String FN_Sign_SymptomsFragment = "Sign_SymptomsFragment" ;
-        String FN_HomeMapFragment  = "HomeMapFragment" ;
-        String FN_IntimateDiseaseSumeraizeFragment = "IntimateDiseaseSumeraizeFragment" ;
-        String FN_DiseaseSummeryFarmerFragment = "GenerateReportIntemationFragment" ;
-        String FN_SummeryDiseaseFragment = "MessageDiseaseReportFragment";
-        String FN_CompleteFarmerProfileByVA = "SearchFarmerProfileByVA" ;
-        String FN_SignUpMain = "SignUpMain" ;
         String FN_ElectricityHomeFragment = "ElectricityHomeFragment" ;
-        String FN_CalenderViewFragment = "CalenderViewFragment";
+
         String FN_WaterHomeFragment = "WaterHomeFragment" ;
         String FN_GasHomeFragment = "GasHomeFragment" ;
         String FN_InternetHomeFragment = "InternetHomeFragment" ;

@@ -74,7 +74,7 @@ public class BillAnaylsisFragment extends Fragment implements View.OnClickListen
             selection = 0;
 //            llBillDetails.setVisibility(View.GONE);
         } else setBillDetails();
-        showBarChart();
+//        showBarChart();
         return frg;
     }
 
