@@ -246,6 +246,10 @@ public interface AppConstt {
         String FN_MyBillsFragment = "MyBillsFragment" ;
         String FN_HistoryFragment = "HistoryFragment" ;
         String FN_SettingsFragment = "SettingsFragment" ;
+        String FN_MaintenanceScheduleFragment = "MaintenanceScheduleFragment" ;
+        String FN_OutageScheduleFragment = "OutageScheduleFragment" ;
+        String FN_AlertsFragment = "AlertsFragment" ;
+        String FN_BillAnaylsisFragment = "BillAnaylsisFragment" ;
     }
 
 

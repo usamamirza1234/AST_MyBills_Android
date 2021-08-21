@@ -31,7 +31,7 @@ public class GasHomeFragment extends Fragment implements View.OnClickListener {
     CalendarView calendar;
     private RtlViewPager viewPgrFeaturedBanner;
     private CircleIndicator circleIndicator;
-    private FeaturedOutletsViewPagerAdapter featuredOutletsViewPagerAdapter;
+    private FeaturedAdsViewPagerAdapter featuredAdsViewPagerAdapter;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -62,7 +62,7 @@ public class GasHomeFragment extends Fragment implements View.OnClickListener {
         //        lstFeaturedOutlets.add(new DModelBanner("-1", "", uploadPrscp, false));
 
 
-        featuredOutletsViewPagerAdapter = new FeaturedOutletsViewPagerAdapter(getActivity(), lstFeaturedOutlets, this, new IAdapterCallback() {
+        featuredAdsViewPagerAdapter = new FeaturedAdsViewPagerAdapter(getActivity(), lstFeaturedOutlets, this, new IAdapterCallback() {
             @Override
             public void onAdapterEventFired(int eventId, int position) {
                 switch (eventId) {
@@ -75,7 +75,7 @@ public class GasHomeFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-        viewPgrFeaturedBanner.setAdapter(featuredOutletsViewPagerAdapter);
+        viewPgrFeaturedBanner.setAdapter(featuredAdsViewPagerAdapter);
         viewPgrFeaturedBanner.setCurrentItem(0);
         viewPgrFeaturedBanner.setOffscreenPageLimit(1);
         circleIndicator.setVisibility(View.VISIBLE);

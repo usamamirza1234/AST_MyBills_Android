@@ -174,13 +174,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/shp_rect_rounded_white_medium_stoke"
+                    android:background="@drawable/shp_rect_rounded_yellow_medium"
                     android:paddingStart="15dp"
                     android:paddingTop="5dp"
                     android:paddingEnd="15dp"
                     android:paddingBottom="5dp"
                     android:text="View"
-                    android:textColor="@color/black_1"
+                    android:textColor="@color/white_1"
                     android:textSize="@dimen/fontsize_mini" />
             </LinearLayout>
 
@@ -266,6 +266,7 @@
                         android:weightSum="100">
 
                         <LinearLayout
+                            android:id="@+id/frg_bill_type_llMaintanences"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -280,7 +281,7 @@
                                 android:layout_centerInParent="true"
                                 android:gravity="center"
 
-                                android:text="How to pay your bill"
+                                android:text="Maintenance Schedule"
                                 android:textColor="@color/dark_gray"
                                 android:textSize="@dimen/fontsize_mini" />
 
@@ -345,6 +346,7 @@
                         android:weightSum="100">
 
                         <LinearLayout
+                            android:id="@+id/frg_bill_type_llOutage"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -359,7 +361,7 @@
                                 android:layout_centerInParent="true"
                                 android:gravity="center"
 
-                                android:text="Payment Method"
+                                android:text="Outgae Schedule"
                                 android:textColor="@color/dark_gray"
                                 android:textSize="@dimen/fontsize_mini" />
 
@@ -382,6 +384,7 @@
 
 
                             <LinearLayout
+                                android:id="@+id/frg_bill_type_llAlerts"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
@@ -394,7 +397,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:gravity="center"
-                                    android:text="User Guide"
+                                    android:text="Alerts"
                                     android:textColor="@color/dark_gray"
                                     android:textSize="@dimen/fontsize_mini" />
 

@@ -13,6 +13,8 @@ ast/billmanagment/mybills/IntroAuxiliaries/SplashFragment.java
 ast/billmanagment/mybills/MainAuxiliaries/BillTypeSpinnerAdapter.java
  ast.billmanagment.mybills.MainAuxiliaries.BillTypeSpinnerAdapter
  ast.billmanagment.mybills.MainAuxiliaries.BillTypeSpinnerAdapter$ViewHolder
+ast/billmanagment/mybills/MainAuxiliaries/ImportantDatesFragment.java
+ ast.billmanagment.mybills.MainAuxiliaries.ImportantDatesFragment
 ast/billmanagment/mybills/Utils/ApiMethod.java
  ast.billmanagment.mybills.Utils.ApiMethod
  ast.billmanagment.mybills.Utils.ApiMethod$GET
@@ -31,6 +33,9 @@ ast/billmanagment/mybills/Utils/TouchImageView.java
  ast.billmanagment.mybills.Utils.TouchImageView$ScaleListener
  ast.billmanagment.mybills.Utils.TouchImageView$State
  ast.billmanagment.mybills.Utils.TouchImageView$ZoomVariables
+ast/billmanagment/mybills/HomeAuxiliaries/BillAnaylsisRcvAdapter.java
+ ast.billmanagment.mybills.HomeAuxiliaries.BillAnaylsisRcvAdapter
+ ast.billmanagment.mybills.HomeAuxiliaries.BillAnaylsisRcvAdapter$ViewHolder
 ast/billmanagment/mybills/Utils/ConnectionChangeListener.java
  ast.billmanagment.mybills.Utils.ConnectionChangeListener
 ast/billmanagment/mybills/MainAuxiliaries/BillListingRcvAdapter.java
@@ -48,8 +53,6 @@ ast/billmanagment/mybills/Utils/CustomToast.java
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/WeekPagerAdapter.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.WeekPagerAdapter
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.WeekPagerAdapter$Weekly
-ast/billmanagment/mybills/CalenderAuxiliaries/CalendarNextMonthAdapter.java
- ast.billmanagment.mybills.CalenderAuxiliaries.CalendarNextMonthAdapter
 ast/billmanagment/mybills/Utils/DModel_PaginationInfo.java
  ast.billmanagment.mybills.Utils.DModel_PaginationInfo
 ast/billmanagment/mybills/DModelUser.java
@@ -70,8 +73,6 @@ ast/billmanagment/mybills/FCMUtils/MyInstanceIDListenerService.java
 ast/billmanagment/mybills/MainActivity.java
  ast.billmanagment.mybills.MainActivity
  ast.billmanagment.mybills.MainActivity$1
-ast/billmanagment/mybills/MainAuxiliaries/TermsConditionsFragment.java
- ast.billmanagment.mybills.MainAuxiliaries.TermsConditionsFragment
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/DayViewFacade.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.DayViewFacade
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.DayViewFacade$Span
@@ -85,12 +86,13 @@ ast/billmanagment/mybills/Utils/LocaleHelper.java
  ast.billmanagment.mybills.Utils.LocaleHelper
 ast/billmanagment/mybills/MainAuxiliaries/EditProfileFragment.java
  ast.billmanagment.mybills.MainAuxiliaries.EditProfileFragment
+ast/billmanagment/mybills/HomeAuxiliaries/ElectricityInfoRcvAdapter.java
+ ast.billmanagment.mybills.HomeAuxiliaries.ElectricityInfoRcvAdapter
+ ast.billmanagment.mybills.HomeAuxiliaries.ElectricityInfoRcvAdapter$ViewHolder
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/format/MonthArrayTitleFormatter.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.format.MonthArrayTitleFormatter
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/format/DateFormatTitleFormatter.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.format.DateFormatTitleFormatter
-ast/billmanagment/mybills/MainAuxiliaries/PaymentMethodFragment.java
- ast.billmanagment.mybills.MainAuxiliaries.PaymentMethodFragment
 ast/billmanagment/mybills/Utils/HintSpinnerDefSelection.java
  ast.billmanagment.mybills.Utils.HintSpinnerDefSelection
 ast/billmanagment/mybills/Utils/IWebPaginationCallback.java
@@ -114,6 +116,8 @@ ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/MaterialCalendar
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.MaterialCalendarView$StateBuilder
 ast/billmanagment/mybills/Utils/RoundedCornerImageView.java
  ast.billmanagment.mybills.Utils.RoundedCornerImageView
+ast/billmanagment/mybills/MainAuxiliaries/DModel_ImportantDates.java
+ ast.billmanagment.mybills.MainAuxiliaries.DModel_ImportantDates
 ast/billmanagment/mybills/Utils/JustifyTextView.java
  ast.billmanagment.mybills.Utils.JustifyTextView
 ast/billmanagment/mybills/MainAuxiliaries/HomeBillsFragment.java
@@ -135,15 +139,17 @@ ast/billmanagment/mybills/MainAuxiliaries/MyBillsFragment.java
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/CalendarDay.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.CalendarDay
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.CalendarDay$1
-ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/CalendarMode.java
- ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.CalendarMode
-ast/billmanagment/mybills/HomeAuxiliaries/ImportantDatesFragment.java
- ast.billmanagment.mybills.HomeAuxiliaries.ImportantDatesFragment
+ast/billmanagment/mybills/HomeAuxiliaries/FeaturedAdsViewPagerAdapter.java
+ ast.billmanagment.mybills.HomeAuxiliaries.FeaturedAdsViewPagerAdapter
+ ast.billmanagment.mybills.HomeAuxiliaries.FeaturedAdsViewPagerAdapter$1
+ ast.billmanagment.mybills.HomeAuxiliaries.FeaturedAdsViewPagerAdapter$ViewHolder
 ast/billmanagment/mybills/HomeAuxiliaries/InternetHomeFragment.java
  ast.billmanagment.mybills.HomeAuxiliaries.InternetHomeFragment
  ast.billmanagment.mybills.HomeAuxiliaries.InternetHomeFragment$1
  ast.billmanagment.mybills.HomeAuxiliaries.InternetHomeFragment$timerTask
  ast.billmanagment.mybills.HomeAuxiliaries.InternetHomeFragment$timerTask$1
+ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/CalendarMode.java
+ ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.CalendarMode
 ast/billmanagment/mybills/Utils/RModel_Error.java
  ast.billmanagment.mybills.Utils.RModel_Error
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/AnimatorListener.java
@@ -161,8 +167,6 @@ ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/MonthPagerAdapte
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.MonthPagerAdapter$Monthly
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/DayViewDecorator.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.DayViewDecorator
-ast/billmanagment/mybills/MainAuxiliaries/UserGuideFragment.java
- ast.billmanagment.mybills.MainAuxiliaries.UserGuideFragment
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/WeekDayView.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.WeekDayView
 ast/billmanagment/mybills/HomeAuxiliaries/GasHomeFragment.java
@@ -174,8 +178,6 @@ ast/billmanagment/mybills/MainAuxiliaries/DModel_BillsHistory.java
  ast.billmanagment.mybills.MainAuxiliaries.DModel_BillsHistory
 ast/billmanagment/mybills/MainAuxiliaries/SettingsFragment.java
  ast.billmanagment.mybills.MainAuxiliaries.SettingsFragment
-ast/billmanagment/mybills/CalenderAuxiliaries/CustomCalenderFragment.java
- ast.billmanagment.mybills.CalenderAuxiliaries.CustomCalenderFragment
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/CalendarPagerAdapter.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.CalendarPagerAdapter
 ast/billmanagment/mybills/Utils/HintSpinner.java
@@ -190,10 +192,10 @@ ast/billmanagment/mybills/Utils/CheckInternetConnection.java
  ast.billmanagment.mybills.Utils.CheckInternetConnection
  ast.billmanagment.mybills.Utils.CheckInternetConnection$1
  ast.billmanagment.mybills.Utils.CheckInternetConnection$ConnectionCheckRunnable
-ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/format/TitleFormatter.java
- ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.format.TitleFormatter
 ast/billmanagment/mybills/IntroActivity.java
  ast.billmanagment.mybills.IntroActivity
+ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/format/TitleFormatter.java
+ ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.format.TitleFormatter
 ast/billmanagment/mybills/AppConfig.java
  ast.billmanagment.mybills.AppConfig
  ast.billmanagment.mybills.AppConfig$1
@@ -204,22 +206,17 @@ ast/billmanagment/mybills/MainAuxiliaries/BillHistoryRcvAdapter.java
  ast.billmanagment.mybills.MainAuxiliaries.BillHistoryRcvAdapter$ViewHolder
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/DateRangeIndex.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.DateRangeIndex
-ast/billmanagment/mybills/HomeAuxiliaries/ElectricityHomeFragment.java
- ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment
- ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment$1
- ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment$timerTask
- ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment$timerTask$1
+ast/billmanagment/mybills/MaterialCalendar/decorators/DisableSelectedDatesDecorator.java
+ ast.billmanagment.mybills.MaterialCalendar.decorators.DisableSelectedDatesDecorator
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/format/CalendarWeekDayFormatter.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.format.CalendarWeekDayFormatter
-ast/billmanagment/mybills/CalenderAuxiliaries/CalendarAdapter.java
- ast.billmanagment.mybills.CalenderAuxiliaries.CalendarAdapter
 ast/billmanagment/mybills/MaterialCalendar/decorators/DisableDatesDecorator.java
  ast.billmanagment.mybills.MaterialCalendar.decorators.DisableDatesDecorator
+ast/billmanagment/mybills/IntroAuxiliaries/SignUpFragment.java
+ ast.billmanagment.mybills.IntroAuxiliaries.SignUpFragment
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/TitleChanger.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.TitleChanger
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.TitleChanger$1
-ast/billmanagment/mybills/IntroAuxiliaries/SignUpFragment.java
- ast.billmanagment.mybills.IntroAuxiliaries.SignUpFragment
 ast/billmanagment/mybills/Utils/MyLocationTracker.java
  ast.billmanagment.mybills.Utils.MyLocationTracker
  ast.billmanagment.mybills.Utils.MyLocationTracker$1
@@ -232,6 +229,8 @@ ast/billmanagment/mybills/Utils/RectangleImageView.java
  ast.billmanagment.mybills.Utils.RectangleImageView
 ast/billmanagment/mybills/Utils/CircleStrokeImageView.java
  ast.billmanagment.mybills.Utils.CircleStrokeImageView
+ast/billmanagment/mybills/HomeExtraAuxilliaries/AlertsFragment.java
+ ast.billmanagment.mybills.HomeExtraAuxilliaries.AlertsFragment
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/WeekView.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.WeekView
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/CalendarPager.java
@@ -264,22 +263,27 @@ ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/DirectionButton.
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.DirectionButton
 ast/billmanagment/mybills/MaterialCalendar/BetterViewPager.java
  ast.billmanagment.mybills.MaterialCalendar.BetterViewPager
+ast/billmanagment/mybills/HomeExtraAuxilliaries/MaintenanceScheduleFragment.java
+ ast.billmanagment.mybills.HomeExtraAuxilliaries.MaintenanceScheduleFragment
+ast/billmanagment/mybills/HomeExtraAuxilliaries/TermsConditionsFragment.java
+ ast.billmanagment.mybills.HomeExtraAuxilliaries.TermsConditionsFragment
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/DecoratorResult.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.DecoratorResult
-ast/billmanagment/mybills/HomeAuxiliaries/FeaturedOutletsViewPagerAdapter.java
- ast.billmanagment.mybills.HomeAuxiliaries.FeaturedOutletsViewPagerAdapter
- ast.billmanagment.mybills.HomeAuxiliaries.FeaturedOutletsViewPagerAdapter$1
- ast.billmanagment.mybills.HomeAuxiliaries.FeaturedOutletsViewPagerAdapter$ViewHolder
 ast/billmanagment/mybills/MaterialCalendar/decorators/DisableBeforeAvailableDateDecorator.java
  ast.billmanagment.mybills.MaterialCalendar.decorators.DisableBeforeAvailableDateDecorator
 ast/billmanagment/mybills/HomeAuxiliaries/DModelBanner.java
  ast.billmanagment.mybills.HomeAuxiliaries.DModelBanner
 ast/billmanagment/mybills/MainAuxiliaries/HistoryFragment.java
  ast.billmanagment.mybills.MainAuxiliaries.HistoryFragment
-ast/billmanagment/mybills/MainAuxiliaries/HowToPayBillFragment.java
- ast.billmanagment.mybills.MainAuxiliaries.HowToPayBillFragment
+ast/billmanagment/mybills/Utils/GPSTracker.java
+ ast.billmanagment.mybills.Utils.GPSTracker
+ast/billmanagment/mybills/HomeExtraAuxilliaries/PaymentMethodFragment.java
+ ast.billmanagment.mybills.HomeExtraAuxilliaries.PaymentMethodFragment
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/Experimental.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.Experimental
+ast/billmanagment/mybills/MainAuxiliaries/ImportantDatesRcvAdapter.java
+ ast.billmanagment.mybills.MainAuxiliaries.ImportantDatesRcvAdapter
+ ast.billmanagment.mybills.MainAuxiliaries.ImportantDatesRcvAdapter$ViewHolder
 ast/billmanagment/mybills/Utils/KeyEventCompat.java
  ast.billmanagment.mybills.Utils.KeyEventCompat
 ast/billmanagment/mybills/Utils/RModel_Message.java
@@ -292,6 +296,10 @@ ast/billmanagment/mybills/IntroAuxiliaries/ForgotPasswordFragment.java
  ast.billmanagment.mybills.IntroAuxiliaries.ForgotPasswordFragment
 ast/billmanagment/mybills/FCMUtils/MyFcmListenerService.java
  ast.billmanagment.mybills.FCMUtils.MyFcmListenerService
+ast/billmanagment/mybills/HomeAuxiliaries/DModelBillInfo.java
+ ast.billmanagment.mybills.HomeAuxiliaries.DModelBillInfo
+ast/billmanagment/mybills/HomeExtraAuxilliaries/OutageScheduleFragment.java
+ ast.billmanagment.mybills.HomeExtraAuxilliaries.OutageScheduleFragment
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/format/DateFormatDayFormatter.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.format.DateFormatDayFormatter
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/OnMonthChangedListener.java
@@ -325,7 +333,14 @@ ast/billmanagment/mybills/Utils/PinEntry.java
 ast/billmanagment/mybills/MaterialCalendar/materialcalendarview/CalendarPagerView.java
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.CalendarPagerView
  ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.CalendarPagerView$LayoutParams
-ast/billmanagment/mybills/MaterialCalendar/decorators/DisableSelectedDatesDecorator.java
- ast.billmanagment.mybills.MaterialCalendar.decorators.DisableSelectedDatesDecorator
-ast/billmanagment/mybills/Utils/GPSTracker.java
- ast.billmanagment.mybills.Utils.GPSTracker
+ast/billmanagment/mybills/HomeAuxiliaries/DModelBillAnaylsis.java
+ ast.billmanagment.mybills.HomeAuxiliaries.DModelBillAnaylsis
+ast/billmanagment/mybills/HomeAuxiliaries/BillAnaylsisFragment.java
+ ast.billmanagment.mybills.HomeAuxiliaries.BillAnaylsisFragment
+ ast.billmanagment.mybills.HomeAuxiliaries.BillAnaylsisFragment$1
+ ast.billmanagment.mybills.HomeAuxiliaries.BillAnaylsisFragment$barChartOnChartValueSelectedListener
+ast/billmanagment/mybills/HomeAuxiliaries/ElectricityHomeFragment.java
+ ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment
+ ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment$1
+ ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment$timerTask
+ ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment$timerTask$1

@@ -87,29 +87,1104 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
             <!--Data Section-->
 
-            <RelativeLayout
-                android:id="@+id/frg_market_rl_outlets_container"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="20dp"
                 android:background="@color/white_1"
                 android:orientation="vertical">
-                <CalendarView
-                    android:visibility="gone"
-                    android:id="@+id/calendarView"
-                    android:layout_margin="10dp"
-                    android:dateTextAppearance="@android:style/TextAppearance.Large"
-                    android:weekDayTextAppearance="@android:style/TextAppearance.Large"
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-                <com.squareup.timessquare.CalendarPickerView
-                    android:visibility="gone"
-                    android:id="@+id/calendar_view"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+
+                        android:gravity="start"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Electricity"
+                        android:textColor="@color/black_1"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/fontsize_small"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/frg_home_electricity_llHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start"
+                            android:lines="1"
+                            android:padding="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="History"
+                            android:textColor="@color/thm_red3"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/fontsize_small"
+                            android:textStyle="bold" />
+
+                        <View
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/thm_red3" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    />
-            </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/shp_rect_rounded_yellow_mini_stoke"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/thm_yellow_1"
+                        android:orientation="horizontal"
+                        android:weightSum="110">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:padding="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="Bill Type"
+                            android:textColor="@color/black_1"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:padding="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="City"
+                            android:textColor="@color/black_1"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:gravity="end"
+                            android:lines="1"
+                            android:padding="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="Address"
+                            android:textColor="@color/black_1"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/frg_home_electricity_rcvElectricityInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/frg_home_electricity_llBill_Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/shp_rect_rounded_yellow_mini_stoke"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/thm_yellow_1"
+                        android:orientation="horizontal"
+                        android:weightSum="30">
+
+                        <TextView
+                            android:id="@+id/frg_home_electricity_txv_bill_company"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="30"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="Bill Type"
+                            android:textColor="@color/black_1"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/fontsize_mini"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/shp_rect_rounded_black_mini_stoke"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+
+                                            android:paddingStart="10dp"
+                                            android:text="Reference No"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:id="@+id/frg_home_electricity_txv_bill_reference"
+
+                                                android:text=""
+                                                android:textColor="@color/dark_gray"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+                                            android:paddingStart="10dp"
+                                            android:text="Name"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:text=""    android:id="@+id/frg_home_electricity_txv_bill_name"
+
+                                                android:textColor="@color/dark_gray"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+
+                                            android:paddingStart="10dp"
+                                            android:text="Address"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:text=""    android:id="@+id/frg_home_electricity_txv_bill_adderess"
+
+                                                android:textColor="@color/dark_gray"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+
+                                            android:paddingStart="10dp"
+                                            android:text="Tariff"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:text=""
+                                                android:id="@+id/frg_home_electricity_txv_bill_teriff"
+
+                                                android:textColor="@color/dark_gray"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+
+                                            android:paddingStart="10dp"
+                                            android:text="Billing Month"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:text=""
+                                                android:id="@+id/frg_home_electricity_txv_bill_billing_month"
+
+                                                android:textColor="@color/dark_gray"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+
+                                            android:paddingStart="10dp"
+                                            android:text="Prev Reading"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:id="@+id/frg_home_electricity_txv_bill_prev_reading"
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:text=""
+                                                android:textColor="@color/dark_gray"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+
+                                            android:paddingStart="10dp"
+                                            android:text="Pres Reading"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:id="@+id/frg_home_electricity_txv_bill_pres_reading"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:text=""
+                                                android:textColor="@color/dark_gray"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+
+                                            android:paddingStart="10dp"
+                                            android:text="Unit"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:id="@+id/frg_home_electricity_txv_bill_units"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:text=""
+                                                android:textColor="@color/dark_gray"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+
+                                            android:paddingStart="10dp"
+                                            android:text="Due Date"
+                                            android:textColor="@color/thm_red3"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:id="@+id/frg_home_electricity_txv_bill_due_date"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:text=""
+                                                android:textColor="@color/thm_red3"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="40"
+                                        android:gravity="start"
+                                        android:orientation="vertical"
+                                        android:padding="5dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:lines="1"
+
+                                            android:paddingStart="10dp"
+                                            android:text="Current Amount"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="@dimen/fontsize_mini" />
+
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start"
+                                        android:layout_weight="60">
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="@dimen/edttext_height_medium"
+                                            android:layout_centerVertical="true"
+                                            android:background="@color/dark_gray3" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="start"
+                                            android:orientation="vertical"
+                                            android:paddingStart="5dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:lines="1"
+                                                android:id="@+id/frg_home_electricity_txv_bill_current_month"
+                                                android:text=""
+                                                android:textColor="@color/dark_gray"
+                                                android:textSize="@dimen/fontsize_mini" />
+
+
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/divider_height"
+                                android:background="@color/dark_gray3" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
 

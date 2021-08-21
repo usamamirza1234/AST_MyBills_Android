@@ -13,19 +13,6 @@
         android:layout_marginBottom="20dp"
         android:background="@color/white_1"
         android:orientation="vertical">
-        <CalendarView
-            android:visibility="gone"
-            android:id="@+id/calendarView"
-            android:layout_margin="10dp"
-            android:dateTextAppearance="@android:style/TextAppearance.Large"
-            android:weekDayTextAppearance="@android:style/TextAppearance.Large"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <com.squareup.timessquare.CalendarPickerView
-            android:visibility="gone"
-            android:id="@+id/calendar_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+
     </RelativeLayout>
 </RelativeLayout>

@@ -80,10 +80,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
+                android:background="@drawable/shp_rect_rounded_yellow_mini_stoke"
                 android:padding="10dp"
                 android:paddingStart="10dp"
-                android:paddingEnd="10dp"
-                android:background="@drawable/shp_rect_rounded_yellow_mini_stoke">
+                android:paddingEnd="10dp">
 
                 <TextView
 
@@ -92,23 +92,16 @@
                     android:layout_centerInParent="true"
                     android:background="@color/colorPrimaryDark"
                     android:cursorVisible="true"
+                    android:lines="15"
                     android:padding="10dp"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
-                    android:lines="15"
-
-                    android:text="https://www.linkedin.com/in/usama-khalid-a99b12109/"
                     android:textColor="@color/black_1"
                     android:textColorHint="@color/colorPrimaryDark"
                     android:textCursorDrawable="@null"
                     android:textSize="@dimen/fontsize_mini" />
 
             </RelativeLayout>
-
-
-
-
-
 
 
         </LinearLayout>

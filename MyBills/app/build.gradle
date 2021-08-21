@@ -47,7 +47,7 @@ dependencies {
     // Multidex for above 65K modules
     implementation 'androidx.multidex:multidex:2.0.1'
 
-
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
     //FCM Push Notification
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
     implementation 'com.google.firebase:firebase-analytics'

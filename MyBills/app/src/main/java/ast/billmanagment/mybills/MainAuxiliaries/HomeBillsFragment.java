@@ -11,6 +11,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import ast.billmanagment.mybills.HomeExtraAuxilliaries.AlertsFragment;
+import ast.billmanagment.mybills.HomeExtraAuxilliaries.MaintenanceScheduleFragment;
+import ast.billmanagment.mybills.HomeExtraAuxilliaries.OutageScheduleFragment;
+import ast.billmanagment.mybills.HomeExtraAuxilliaries.TermsConditionsFragment;
 import ast.billmanagment.mybills.HomeAuxiliaries.ElectricityHomeFragment;
 import ast.billmanagment.mybills.HomeAuxiliaries.GasHomeFragment;
 import ast.billmanagment.mybills.HomeAuxiliaries.InternetHomeFragment;
@@ -21,7 +25,7 @@ import ast.billmanagment.mybills.Utils.IBadgeUpdateListener;
 
 public class HomeBillsFragment extends Fragment implements View.OnClickListener {
 
-    LinearLayout llTermCond;
+    LinearLayout llTermCond, llOutage, llMaintanence, llAlerts;
     TextView txvWater, txvGas, txvElecticity, txvInternet;
     IBadgeUpdateListener mBadgeUpdateListener;
 
@@ -47,7 +51,13 @@ public class HomeBillsFragment extends Fragment implements View.OnClickListener 
         txvInternet = view.findViewById(R.id.frg_bill_type_txv_view_internet);
 
         llTermCond = view.findViewById(R.id.frg_bill_type_llTermCond);
+        llOutage = view.findViewById(R.id.frg_bill_type_llOutage);
+        llAlerts = view.findViewById(R.id.frg_bill_type_llAlerts);
+        llMaintanence = view.findViewById(R.id.frg_bill_type_llMaintanences);
         llTermCond.setOnClickListener(this);
+        llMaintanence.setOnClickListener(this);
+        llAlerts.setOnClickListener(this);
+        llOutage.setOnClickListener(this);
 
         txvWater.setOnClickListener(this);
         txvGas.setOnClickListener(this);
@@ -63,18 +73,30 @@ public class HomeBillsFragment extends Fragment implements View.OnClickListener 
                 navToElectricityHomeFragment();
                 break;
             case R.id.frg_bill_type_txv_view_internet:
-                navToInternetHomeFragment();
+//                navToInternetHomeFragment();
                 break;
             case R.id.frg_bill_type_txv_view_gas:
-                navToGasHomeFragment();
+//                navToGasHomeFragment();
                 break;
             case R.id.frg_bill_type_txv_view_water:
-                navToWaterHomeFragment();
+//                navToWaterHomeFragment();
                 break;
             case R.id.frg_bill_type_llTermCond:
                 navToTermsConditionFragment();
                 break;
 
+            case R.id.frg_bill_type_llAlerts:
+                navToAlertsFragment();
+                break;
+
+            case R.id.frg_bill_type_llMaintanences:
+                navToMaintenanceFragment();
+                break;
+
+
+            case R.id.frg_bill_type_llOutage:
+                navToOutageFragment();
+                break;
         }
     }
 
@@ -121,6 +143,40 @@ public class HomeBillsFragment extends Fragment implements View.OnClickListener 
         ft = fm.beginTransaction();
         ft.add(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_TermsConditionsFragment);
         ft.addToBackStack(AppConstt.FragTag.FN_TermsConditionsFragment);
+        ft.hide(this);
+        ft.commit();
+    }
+
+    private void navToMaintenanceFragment() {
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft;
+        Fragment frg = new MaintenanceScheduleFragment();
+        ft = fm.beginTransaction();
+        ft.add(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_MaintenanceScheduleFragment);
+        ft.addToBackStack(AppConstt.FragTag.FN_MaintenanceScheduleFragment);
+        ft.hide(this);
+        ft.commit();
+    }
+
+
+    private void navToOutageFragment() {
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft;
+        Fragment frg = new OutageScheduleFragment();
+        ft = fm.beginTransaction();
+        ft.add(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_OutageScheduleFragment);
+        ft.addToBackStack(AppConstt.FragTag.FN_OutageScheduleFragment);
+        ft.hide(this);
+        ft.commit();
+    }
+
+    private void navToAlertsFragment() {
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft;
+        Fragment frg = new AlertsFragment();
+        ft = fm.beginTransaction();
+        ft.add(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_AlertsFragment);
+        ft.addToBackStack(AppConstt.FragTag.FN_AlertsFragment);
         ft.hide(this);
         ft.commit();
     }

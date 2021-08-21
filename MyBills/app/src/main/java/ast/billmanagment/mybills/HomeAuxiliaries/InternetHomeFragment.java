@@ -30,7 +30,7 @@ public class InternetHomeFragment extends Fragment implements View.OnClickListen
 
     private RtlViewPager viewPgrFeaturedBanner;
     private CircleIndicator circleIndicator;
-    private FeaturedOutletsViewPagerAdapter featuredOutletsViewPagerAdapter;
+    private FeaturedAdsViewPagerAdapter featuredAdsViewPagerAdapter;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class InternetHomeFragment extends Fragment implements View.OnClickListen
         lstFeaturedOutlets.add(new DModelBanner("3", "https://d3nuqriibqh3vw.cloudfront.net/nescafe_original_resized.jpg?X5opHznbHMpf6P5EgUfoX_NafvL7eCyT", uploadPrscp, true));
         lstFeaturedOutlets.add(new DModelBanner("2", "https://i2.wp.com/campaignsoftheworld.com/wp-content/uploads/2019/06/Sarfaraz-Ahmed-Yawn-memes-COTW-2.jpg?w=960&ssl=1", uploadPrscp, true));
         lstFeaturedOutlets.add(new DModelBanner("1", "https://i.dawn.com/primary/2016/02/56b9905e791f9.jpg", uploadPrscp, true));
-        featuredOutletsViewPagerAdapter = new FeaturedOutletsViewPagerAdapter(getActivity(), lstFeaturedOutlets, this, new IAdapterCallback() {
+        featuredAdsViewPagerAdapter = new FeaturedAdsViewPagerAdapter(getActivity(), lstFeaturedOutlets, this, new IAdapterCallback() {
             @Override
             public void onAdapterEventFired(int eventId, int position) {
                 switch (eventId) {
@@ -72,7 +72,7 @@ public class InternetHomeFragment extends Fragment implements View.OnClickListen
             }
         });
 
-        viewPgrFeaturedBanner.setAdapter(featuredOutletsViewPagerAdapter);
+        viewPgrFeaturedBanner.setAdapter(featuredAdsViewPagerAdapter);
         viewPgrFeaturedBanner.setCurrentItem(0);
         viewPgrFeaturedBanner.setOffscreenPageLimit(1);
         circleIndicator.setVisibility(View.VISIBLE);

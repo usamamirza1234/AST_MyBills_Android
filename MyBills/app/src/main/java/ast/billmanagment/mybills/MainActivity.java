@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
-import ast.billmanagment.mybills.CalenderAuxiliaries.CustomCalenderFragment;
+import ast.billmanagment.mybills.MainAuxiliaries.ImportantDatesFragment;
 import ast.billmanagment.mybills.MainAuxiliaries.EditProfileFragment;
 import ast.billmanagment.mybills.MainAuxiliaries.HistoryFragment;
 import ast.billmanagment.mybills.MainAuxiliaries.HomeBillsFragment;
@@ -312,7 +312,7 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
 
     private void navToCustomCalenderFragment() {
 
-        Fragment frg = new CustomCalenderFragment();
+        Fragment frg = new ImportantDatesFragment();
         ft = fm.beginTransaction();
         ft.add(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_CustomCalenderFragment);
         ft.addToBackStack(AppConstt.FragTag.FN_CustomCalenderFragment);
@@ -331,7 +331,7 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
 
             if (frg instanceof EditProfileFragment && frg.isVisible()) {
                 ft.hide(frg);
-            } else if (frg instanceof CustomCalenderFragment && frg.isVisible()) {
+            } else if (frg instanceof ImportantDatesFragment && frg.isVisible()) {
                 ft.hide(frg);
             } else if (frg instanceof MyBillsFragment && frg.isVisible()) {
                 ft.hide(frg);
