@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
+import ast.billmanagment.mybills.NewDesignAuxiliaries.HomeFragment;
 import ast.billmanagment.mybills.Old_DesignAuxiliaries.MainAuxiliaries.ImportantDatesFragment;
 import ast.billmanagment.mybills.Old_DesignAuxiliaries.MainAuxiliaries.EditProfileFragment;
 import ast.billmanagment.mybills.Old_DesignAuxiliaries.MainAuxiliaries.HistoryFragment;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
     NavigationView navigationView;
     private FragmentTransaction ft;
     private FragmentManager fm;
-    RelativeLayout rlToolbar, rlBack, rlMenu;
+    RelativeLayout rlToolbar, rlBack, rlMenu,idr;
     LinearLayout llImportantDates, llMyBills, llProfile, llLogout, llHistory, llSettings;
     TextView txvTitleBar;
 
@@ -57,26 +58,27 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
         navigationView = drawer.findViewById(R.id.act_main_navview);
         rlToolbar = findViewById(R.id.act_main_rl_toolbar);
         txvTitleBar = findViewById(R.id.act_intro_txv_title);
-        rlBack = findViewById(R.id.act_intro_rl_toolbar_back);
+       rlBack = findViewById(R.id.act_intro_rl_toolbar_back);
         rlMenu = findViewById(R.id.act_intro_rl_toolbar_menu);
+        idr = findViewById(R.id.homebar);
 
-
-        llImportantDates = findViewById(R.id.lay_navigationview_llImportantDates);
-        llProfile = findViewById(R.id.lay_navigationview_llEditProfile);
-        llMyBills = findViewById(R.id.lay_navigationview_llMyBills);
+//        llImportantDates = findViewById(R.id.lay_navigationview_llImportantDates);
+//        llProfile = findViewById(R.id.lay_navigationview_llEditProfile);
+//        llMyBills = findViewById(R.id.lay_navigationview_llMyBills);
         llLogout = findViewById(R.id.lay_navigationview_llLogout);
-        llHistory = findViewById(R.id.lay_navigationview_llHistory);
+       // llHistory = findViewById(R.id.lay_navigationview_llHistory);
         llSettings = findViewById(R.id.lay_navigationview_llSettings);
 
         rlBack.setOnClickListener(this);
         rlMenu.setOnClickListener(this);
+        idr.setOnClickListener(this);
 
-        llImportantDates.setOnClickListener(this);
-        llProfile.setOnClickListener(this);
-        llMyBills.setOnClickListener(this);
+//        llImportantDates.setOnClickListener(this);
+//        llProfile.setOnClickListener(this);
+//        llMyBills.setOnClickListener(this);
         llLogout.setOnClickListener(this);
-        llHistory.setOnClickListener(this);
-        llSettings.setOnClickListener(this);
+//        llHistory.setOnClickListener(this);
+//        llSettings.setOnClickListener(this);
 
 
         drawer.addDrawerListener(new DrawerLayout.DrawerListener() {
@@ -123,22 +125,22 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
             case R.id.act_intro_rl_toolbar_back:
                 onBackPressed();
                 break;
-            case R.id.lay_navigationview_llImportantDates:
-                navToCustomCalenderFragment();
-                break;
-            case R.id.lay_navigationview_llEditProfile:
-                navToEditProfileFragment();
-                break;
-            case R.id.lay_navigationview_llMyBills:
-                navToMyBillsFragment();
-                break;
+//            case R.id.lay_navigationview_llImportantDates:
+//                navToCustomCalenderFragment();
+//                break;
+//            case R.id.lay_navigationview_llEditProfile:
+//                navToEditProfileFragment();
+//                break;
+//            case R.id.lay_navigationview_llMyBills:
+//                navToMyBillsFragment();
+//                break;
 
             case R.id.lay_navigationview_llLogout:
                 AppConfig.getInstance().navtoLogin();
                 break;
-            case R.id.lay_navigationview_llHistory:
-                navToHistoryFragment();
-                break;
+//            case R.id.lay_navigationview_llHistory:
+//                navToHistoryFragment();
+//                break;
             case R.id.lay_navigationview_llSettings:
                 navToSettingsFragment();
                 break;
@@ -171,6 +173,7 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
                 rlBack.setVisibility(View.VISIBLE);
                 rlMenu.setVisibility(View.VISIBLE);
                 txvTitleBar.setVisibility(View.VISIBLE);
+                idr.setVisibility(View.VISIBLE);
                 break;
         }
     }
@@ -190,15 +193,15 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
 
     public void openDrawar() {
 
-        drawer.openDrawer(GravityCompat.END);
+        drawer.openDrawer(GravityCompat.START);
 
     }
 
     public void closeDrawar() {
 
 //        drawer.closeDrawer(GravityCompat.END);
-        if (this.drawer.isDrawerOpen(GravityCompat.END)) {
-            this.drawer.closeDrawer(GravityCompat.END);
+        if (this.drawer.isDrawerOpen(GravityCompat.START)) {
+            this.drawer.closeDrawer(GravityCompat.START);
         }
     }
 
@@ -265,7 +268,7 @@ public class MainActivity extends AppCompatActivity implements IBadgeUpdateListe
 
     private void navToBillTypeFragment() {
         clearMyBackStack();
-        Fragment frg = new HomeBillsFragment();
+        Fragment frg = new HomeFragment();
         ft = fm.beginTransaction();
         ft.replace(R.id.act_main_content_frg, frg, AppConstt.FragTag.FN_HomeFragment);
         ft.commit();
