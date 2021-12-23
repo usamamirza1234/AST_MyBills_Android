@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/shp_rect_rounded_yellow_mini_stoke">
 
-                <ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.MaterialCalendarView
+                <ast.billmanagment.mybills.Old_DesignAuxiliaries.MaterialCalendar.materialcalendarview.MaterialCalendarView
                     android:id="@+id/dlg_reorder_mcv_calndr"
                     android:layout_width="match_parent"
                     android:layout_height="350dp"
@@ -48,7 +48,7 @@
                 android:background="@drawable/shp_rect_rounded_yellow_mini_stoke"
                 android:orientation="vertical">
 
-                <ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.MaterialCalendarView
+                <ast.billmanagment.mybills.Old_DesignAuxiliaries.MaterialCalendar.materialcalendarview.MaterialCalendarView
                     android:id="@+id/dlg_reorder_mcv_calndr_nextmonth"
                     android:layout_width="match_parent"
                     android:layout_height="350dp"

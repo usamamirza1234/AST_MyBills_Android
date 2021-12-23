@@ -1,7 +1,7 @@
-#Sat Aug 21 14:56:08 PKT 2021
-base.0=D\:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+#Thu Dec 23 13:57:07 PKT 2021
+base.0=D\:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=D\:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.1=D\:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex

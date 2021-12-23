@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ur-xxxhdpi-v4\\values-ur-xxxhdpi-v4.xml",
+            "outputFile": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ur-xxxhdpi-v4\\values-ur-xxxhdpi-v4.xml",
             "map": [
                 {
-                    "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\values-ur-xxxhdpi\\dimens.xml",
+                    "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\src\\main\\res\\values-ur-xxxhdpi\\dimens.xml",
                     "from": {
                         "startLines": "2,3,8,6,4,5,7",
                         "startColumns": "4,4,4,4,4,4,4",

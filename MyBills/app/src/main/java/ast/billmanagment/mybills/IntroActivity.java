@@ -8,19 +8,16 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import java.util.Locale;
 
-import ast.billmanagment.mybills.IntroAuxiliaries.PreSignInFragment;
-import ast.billmanagment.mybills.IntroAuxiliaries.SplashFragment;
+import ast.billmanagment.mybills.NewDesignAuxiliaries.IntroAuxiliaries.PreSignInFragment;
+import ast.billmanagment.mybills.NewDesignAuxiliaries.IntroAuxiliaries.SplashFragment;
 import ast.billmanagment.mybills.Utils.AppConstt;
 import ast.billmanagment.mybills.Utils.IBadgeUpdateListener;
 import ast.billmanagment.mybills.Utils.LocaleHelper;

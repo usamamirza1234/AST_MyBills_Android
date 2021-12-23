@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Usama\\.gradle\\caches\\transforms-2\\files-2.1\\750e11957bf7041179375a87d64fa3cb\\material-1.0.0\\res\\values-land\\values-land.xml",

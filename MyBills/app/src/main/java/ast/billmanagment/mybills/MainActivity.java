@@ -17,12 +17,12 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
-import ast.billmanagment.mybills.MainAuxiliaries.ImportantDatesFragment;
-import ast.billmanagment.mybills.MainAuxiliaries.EditProfileFragment;
-import ast.billmanagment.mybills.MainAuxiliaries.HistoryFragment;
-import ast.billmanagment.mybills.MainAuxiliaries.HomeBillsFragment;
-import ast.billmanagment.mybills.MainAuxiliaries.MyBillsFragment;
-import ast.billmanagment.mybills.MainAuxiliaries.SettingsFragment;
+import ast.billmanagment.mybills.Old_DesignAuxiliaries.MainAuxiliaries.ImportantDatesFragment;
+import ast.billmanagment.mybills.Old_DesignAuxiliaries.MainAuxiliaries.EditProfileFragment;
+import ast.billmanagment.mybills.Old_DesignAuxiliaries.MainAuxiliaries.HistoryFragment;
+import ast.billmanagment.mybills.Old_DesignAuxiliaries.MainAuxiliaries.HomeBillsFragment;
+import ast.billmanagment.mybills.Old_DesignAuxiliaries.MainAuxiliaries.MyBillsFragment;
+import ast.billmanagment.mybills.Old_DesignAuxiliaries.MainAuxiliaries.SettingsFragment;
 import ast.billmanagment.mybills.Utils.AppConstt;
 import ast.billmanagment.mybills.Utils.IBadgeUpdateListener;
 

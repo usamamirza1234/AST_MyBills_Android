@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ur\\values-ur.xml",
+            "outputFile": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ur\\values-ur.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Usama\\.gradle\\caches\\transforms-2\\files-2.1\\f46279d3478497538e817a8da381f082\\jetified-play-services-basement-17.0.0\\res\\values-ur\\values.xml",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\values-ur\\strings.xml",
+                    "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\src\\main\\res\\values-ur\\strings.xml",
                     "from": {
                         "startLines": "3,4",
                         "startColumns": "4,4",

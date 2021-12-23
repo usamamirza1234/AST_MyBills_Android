@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Usama\\.gradle\\caches\\transforms-2\\files-2.1\\3f3267c357015e2a14bfc685928e8b2f\\appcompat-1.0.2\\res\\values-v21\\values-v21.xml",
@@ -42,25 +42,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "4,29,39,34,50,46",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "184,1425,1887,1654,2548,2343",
-                        "endLines": "27,32,45,37,54,49",
-                        "endColumns": "12,12,12,12,12,12",
-                        "endOffsets": "1417,1646,2337,1879,2867,2542"
-                    },
-                    "to": {
-                        "startLines": "6,343,347,354,358,363",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "399,23899,24118,24563,24786,25106",
-                        "endLines": "29,346,353,357,362,366",
-                        "endColumns": "12,12,12,12,12,12",
-                        "endOffsets": "1601,24113,24558,24781,25101,25302"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Usama\\.gradle\\caches\\transforms-2\\files-2.1\\750e11957bf7041179375a87d64fa3cb\\material-1.0.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,10,18,26",
@@ -96,6 +77,25 @@
                         "endLines": "2,3,4,5,287,288,295,299,337,342",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "199,263,330,394,20625,20751,21208,21504,23556,23894"
+                    }
+                },
+                {
+                    "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "4,29,39,34,50,46",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "184,1425,1887,1654,2548,2343",
+                        "endLines": "27,32,45,37,54,49",
+                        "endColumns": "12,12,12,12,12,12",
+                        "endOffsets": "1417,1646,2337,1879,2867,2542"
+                    },
+                    "to": {
+                        "startLines": "6,343,347,354,358,363",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "399,23899,24118,24563,24786,25106",
+                        "endLines": "29,346,353,357,362,366",
+                        "endColumns": "12,12,12,12,12,12",
+                        "endOffsets": "1601,24113,24558,24781,25101,25302"
                     }
                 }
             ]

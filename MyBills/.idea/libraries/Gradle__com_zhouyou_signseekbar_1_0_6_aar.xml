@@ -2,11 +2,15 @@
   <library name="Gradle: com.zhouyou:signseekbar:1.0.6@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ad3c111f6a96b6397cc5c8aed8e1638/jetified-signseekbar-1.0.6/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab84d5c9d27699a2eb769aea7482c0f3/jetified-signseekbar-1.0.6/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ad3c111f6a96b6397cc5c8aed8e1638/jetified-signseekbar-1.0.6/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ad3c111f6a96b6397cc5c8aed8e1638/jetified-signseekbar-1.0.6/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ad3c111f6a96b6397cc5c8aed8e1638/jetified-signseekbar-1.0.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab84d5c9d27699a2eb769aea7482c0f3/jetified-signseekbar-1.0.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab84d5c9d27699a2eb769aea7482c0f3/jetified-signseekbar-1.0.6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab84d5c9d27699a2eb769aea7482c0f3/jetified-signseekbar-1.0.6/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zhouyou/signseekbar/1.0.6/b3f8d1675efb597ffc96dd6ce6917f9e006b1de5/signseekbar-1.0.6-javadoc.jar!/" />

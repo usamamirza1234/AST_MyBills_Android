@@ -22,7 +22,7 @@
 
 
 
-        <ast.billmanagment.mybills.MaterialCalendar.materialcalendarview.MaterialCalendarView
+        <ast.billmanagment.mybills.Old_DesignAuxiliaries.MaterialCalendar.materialcalendarview.MaterialCalendarView
             android:id="@+id/dlg_reorder_mcv_calndr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
