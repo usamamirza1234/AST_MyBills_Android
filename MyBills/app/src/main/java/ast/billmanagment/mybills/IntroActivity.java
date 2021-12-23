@@ -16,8 +16,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import java.util.Locale;
 
-import ast.billmanagment.mybills.NewDesignAuxiliaries.IntroAuxiliaries.PreSignInFragment;
-import ast.billmanagment.mybills.NewDesignAuxiliaries.IntroAuxiliaries.SplashFragment;
+import ast.billmanagment.mybills.IntroAuxiliaries.PreSignInFragment;
+import ast.billmanagment.mybills.IntroAuxiliaries.SplashFragment;
 import ast.billmanagment.mybills.Utils.AppConstt;
 import ast.billmanagment.mybills.Utils.IBadgeUpdateListener;
 import ast.billmanagment.mybills.Utils.LocaleHelper;

@@ -153,28 +153,28 @@ public class MyApplication extends Application {
     public void setLanguageSpecificFonts(boolean isEnglish) {
         if (!isEnglish) {
             //Arabic fonts
-            DEFAULT_NORMAL_BOLD_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_NORMAL_BOLD_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_NORMAL_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_NORMAL_NORMAL_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-
-
-            DEFAULT_SANS_BOLD_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_SANS_BOLD_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_SANS_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_SANS_NORMAL_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-
-
-            DEFAULT_SERIF_BOLD_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_SERIF_BOLD_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_SERIF_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_SERIF_NORMAL_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-
-
-            DEFAULT_MONOSPACE_BOLD_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_MONOSPACE_BOLD_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_MONOSPACE_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
-            DEFAULT_MONOSPACE_NORMAL_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_NORMAL_BOLD_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_NORMAL_BOLD_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_NORMAL_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_NORMAL_NORMAL_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//
+//
+//            DEFAULT_SANS_BOLD_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_SANS_BOLD_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_SANS_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_SANS_NORMAL_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//
+//
+//            DEFAULT_SERIF_BOLD_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_SERIF_BOLD_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_SERIF_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_SERIF_NORMAL_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//
+//
+//            DEFAULT_MONOSPACE_BOLD_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_MONOSPACE_BOLD_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_MONOSPACE_ITALIC_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
+//            DEFAULT_MONOSPACE_NORMAL_FONT_FILENAME = "fonts/jameel_noori_nastaleeq_kasheeda.ttf";
         } else {
             //English fonts
             DEFAULT_NORMAL_BOLD_FONT_FILENAME = "fonts/Comfortaa_Bold.ttf";

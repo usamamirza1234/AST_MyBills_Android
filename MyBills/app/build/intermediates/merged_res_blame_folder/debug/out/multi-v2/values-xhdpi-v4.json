@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\AST PROJECTS\\AST Bill\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+            "outputFile": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
             "map": [
                 {
-                    "source": "F:\\AST PROJECTS\\AST Bill\\MyBills\\app\\src\\main\\res\\values-xhdpi\\ids.xml",
+                    "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\src\\main\\res\\values-xhdpi\\ids.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "F:\\AST PROJECTS\\AST Bill\\MyBills\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
+                    "source": "D:\\Projects AST\\AST_MyBills_Android\\MyBills\\MyBills\\app\\src\\main\\res\\values-xhdpi\\dimens.xml",
                     "from": {
                         "startLines": "4,6,5,35,82,79,78,83,80,84,81,92,89,87,88,90,91,74,73,76,75,28,63,36,64,61,62,60,16,17,23,20,22,18,19,21,15,43,54,49,52,47,59,51,46,53,48,94,8,95,96,29,27,69,68,37,71,38,70,3",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
